@@ -7,33 +7,36 @@ import background from '../constants/images/background.png';
 
 export default class LandingPage extends React.Component{
     renderArtist = (artist) => (
-        <div className="small-card-region">
+        <div key={artist.name} className="small-card-region">
             <SmallCard artist={artist}/>
         </div>
     )
 
     render(){
         return(
-            <Paper className="landing-paper" square={true}>
+            <div className="landing-paper">
                 <div className="landing-paper-top">
-                    <img src={background} className="background-img"/>
+                    <img src={background} className="background-img" alt=""/>
                 </div>
-                <Paper className="landing-paper-bot" square={true}>
-                    <div style={{marginTop: '5%'}}>
+                <div className="landing-paper-bot">
+                    <div className="event-title">
+                        <h2 className="header-date">Event</h2>
+                    </div>
+                    <div style={{marginTop: '1%'}}>
                     {/* <List className="small-card-list">
                         {
                             artists.map(artist => (this.renderArtist(artist)))
                         }
                     </List> */
                     }
-                    <Grid direction="column">
+                    <Grid container direction="column">
                         {
                             artists.map(artist => (this.renderArtist(artist)))
                         }
                     </Grid>
                     </div>  
-                </Paper>
-            </Paper>        
+                </div>
+            </div>        
         )
     }
 }

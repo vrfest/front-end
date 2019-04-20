@@ -1,5 +1,6 @@
 import React from 'react';
 import '../constants/header.css';
+import { Link } from "react-router-dom";
 
 export default class Header extends React.Component {
     render() {
@@ -11,7 +12,7 @@ export default class Header extends React.Component {
                     </div>
 
                     <div className="navbar-right">
-                        <p>Login / Signup</p>
+                        <p><Link to="/login" style={{ textDecoration: 'none' }}>Login</Link> / <Link style={{ textDecoration: 'none' }} to="/signup">Signup</Link></p>
                     </div>
                 </div>
             </div>

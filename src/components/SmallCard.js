@@ -15,6 +15,7 @@ const styles = theme => ({
     outlineStyle: 'hidden',
     backgroundColor: 'transparent',
     boxShadow: 'none',
+    //width: '%',
 
   },
   details: {
@@ -53,12 +54,15 @@ function MediaControlCard(props) {
             />
             <div className={classes.details}>
             <CardContent className={classes.content}>
-              <Typography component="h5" variant="h5" color="default">
+              <h2 className="header-artist">
                 {props.artist.name}
-              </Typography>
-              <Typography variant="subtitle1" color="textSecondary">
+              </h2>
+              <h4 className="header-date">
+                {props.artist.date}
+              </h4>
+              <h6 className="header-artist">
                 {props.artist.content}
-              </Typography>
+              </h6>
             </CardContent>
             {/* <div className={classes.controls}>
               <IconButton aria-label="Play/pause">
@@ -71,7 +75,7 @@ function MediaControlCard(props) {
         <div className="button-money">
             <div style={{marginTop:'2%'}}>
               <Grid container alignItems="center" direction="column">
-                <h3 style={{color: 'white'}}>20$</h3>
+                <h2 className="header-artist">{props.artist.cost}$</h2>
                 <Button>Buy</Button>
               </Grid>
             </div>

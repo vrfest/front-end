@@ -30,7 +30,7 @@ body{
 }
 
 .landing-paper{
-    height: 1100px;
+    height: 1500px;
     background: linear-gradient(-270deg, rgb(58, 56, 56), rgb(41, 40, 40), rgb(7, 7, 7));
 
 }
@@ -42,15 +42,14 @@ body{
 }
 
 .landing-paper-bot{
-    height: 600px;
+    height: 1000px;
     background: linear-gradient(-270deg, rgb(58, 56, 56), rgb(41, 40, 40), rgb(7, 7, 7));
-
 }
 
 
 .small-card-region{
-    width: 600px;
-    margin: 2% 25%;
+    width: 90%;
+    margin: 2% 2%;
 }
 
 .small-card-list{
@@ -129,5 +128,22 @@ body{
 
 .background-img {
     width: 100%;
-    height: 100%;
+    height: 98%;
+}
+
+.header-artist{
+    color: #707070
+}
+
+.header-date{
+    color: #ffffff
+}
+
+.event-title{
+    margin: 1% 50%;
+}
+
+.dashboard-container{
+    background: linear-gradient(-270deg, rgb(58, 56, 56), rgb(41, 40, 40), rgb(7, 7, 7));
+    padding: 1%;
 }
