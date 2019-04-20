@@ -11,8 +11,8 @@ export default class LandingPage extends React.Component {
                     <h1 className="h1">Your Community Awaits</h1>
 
                     <p className="label">Sign In</p>
-                    <input type="email" name="email" placeholder="Email" />
-                    <input type="password" name="password" placeholder="Password" />
+                    <input type="email" name="email" placeholder="Email" required />
+                    <input type="password" name="password" placeholder="Password" required />
 
                     <div className="form-row">
                         <div className="form-row2">
@@ -24,7 +24,7 @@ export default class LandingPage extends React.Component {
                     </div>
                     <button>Sign In</button>
 
-                    <p>Don't have an Epic Games account? <a href="https://google.com">Sign Up</a></p>
+                    <p>Don't have an VRFest account? <a href="https://google.com">Sign Up</a></p>
                 </div>
             </div>
         )
