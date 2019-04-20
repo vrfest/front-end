@@ -6,12 +6,16 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { Grid } from '@material-ui/core';
+import { Grid, Paper, Button } from '@material-ui/core';
  
 
 const styles = theme => ({
   card: {
     display: 'flex',
+    outlineStyle: 'hidden',
+    backgroundColor: 'transparent',
+    boxShadow: 'none',
+
   },
   details: {
     display: 'flex',
@@ -39,30 +43,40 @@ function MediaControlCard(props) {
   const { classes, theme } = props;
 
   return (
-    <Card className={classes.card}>
-    <Grid container direction="row" justify="space-evenly">
-        <div className={classes.details}>
-        <CardContent className={classes.content}>
-          <Typography component="h5" variant="h5">
-            {props.artist.name}
-          </Typography>
-          <Typography variant="subtitle1" color="textSecondary">
-            Add something here
-          </Typography>
-        </CardContent>
-        {/* <div className={classes.controls}>
-          <IconButton aria-label="Play/pause">
-            <PlayArrowIcon className={classes.playIcon} />
-          </IconButton>
-        </div> */}
-      </div>
-      <CardMedia
-        className={classes.cover}
-        image={props.artist.image}
-        title="Live from space album cover"
-      />
-    </Grid>
-    </Card>
+      <Grid container direction="row" justify="space-between" >
+        <Card className={classes.card}>
+        <Grid container direction="row" justify="space-evenly">
+          <CardMedia
+              className={classes.cover}
+              image={props.artist.image}
+              title="Live from space album cover"
+            />
+            <div className={classes.details}>
+            <CardContent className={classes.content}>
+              <Typography component="h5" variant="h5" color="default">
+                {props.artist.name}
+              </Typography>
+              <Typography variant="subtitle1" color="textSecondary">
+                {props.artist.content}
+              </Typography>
+            </CardContent>
+            {/* <div className={classes.controls}>
+              <IconButton aria-label="Play/pause">
+                <PlayArrowIcon className={classes.playIcon} />
+              </IconButton>
+            </div> */}
+          </div>
+        </Grid>
+        </Card>
+        <div className="button-money">
+            <div style={{marginTop:'2%'}}>
+              <Grid container alignItems="center" direction="column">
+                <h3 style={{color: 'white'}}>20$</h3>
+                <Button>Buy</Button>
+              </Grid>
+            </div>
+        </div>
+      </Grid>
   );
 }
 

@@ -3,6 +3,7 @@ import { Grid, Paper, List } from '@material-ui/core';
 import SmallCard from '../components/SmallCard';
 import FrontSlide from './FrontSlide';
 import { artists } from '../constants/initialState.json';
+import background from '../constants/images/background.png';
 
 export default class LandingPage extends React.Component{
     renderArtist = (artist) => (
@@ -14,19 +15,22 @@ export default class LandingPage extends React.Component{
     render(){
         return(
             <Paper className="landing-paper" square={true}>
-                <Paper className="landing-paper-top" square={true}>
-                    {/* <FrontSlide/> */}
-                </Paper>
+                <div className="landing-paper-top">
+                    <img src={background} className="background-img"/>
+                </div>
                 <Paper className="landing-paper-bot" square={true}>
-                    <Grid>
-
-                    </Grid>
-                    <div style={{marginLeft: '10%', marginTop: '2%'}}>
-                    <List className="small-card-list">
+                    <div style={{marginTop: '5%'}}>
+                    {/* <List className="small-card-list">
                         {
                             artists.map(artist => (this.renderArtist(artist)))
                         }
-                    </List>
+                    </List> */
+                    }
+                    <Grid direction="column">
+                        {
+                            artists.map(artist => (this.renderArtist(artist)))
+                        }
+                    </Grid>
                     </div>  
                 </Paper>
             </Paper>        

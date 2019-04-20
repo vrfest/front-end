@@ -31,7 +31,7 @@ body{
 
 .landing-paper{
     height: 1100px;
-    background: linear-gradient(-270deg, rgb(7, 7, 7), rgb(7, 7, 7), rgb(7, 7, 7));
+    background: linear-gradient(-270deg, rgb(58, 56, 56), rgb(41, 40, 40), rgb(7, 7, 7));
 
 }
 
@@ -119,4 +119,15 @@ body{
 
 .front-slide{
     margin: 10px 10px;
+}
+
+.button-money{
+    width: 150px;
+    height: 100px;
+    background: transparent
+}
+
+.background-img {
+    width: 100%;
+    height: 100%;
 }
