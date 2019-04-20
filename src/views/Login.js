@@ -21,7 +21,7 @@ export default class LandingPage extends React.Component {
                             <label for="re-me">Remember Me</label>
                         </div>
 
-                        <a href="#"> Forgot Your Password?</a>
+                        <a href="/signup"> Forgot Your Password?</a>
                     </div>
                     <button className="btn-signin">Sign In</button>
 
