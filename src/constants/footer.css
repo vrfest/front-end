@@ -1,0 +1,45 @@
+.footer {
+  height: 200px;
+  background-color: black;
+  display: flex;
+    align-items: center;
+    justify-content: center;
+  width: 100%;
+  padding: 50px 2% 30px 2%;
+}
+
+.ft-col-1, .ft-col-2, .ft-col-3, .ft-col-4 {
+  /* border: 0.5px dashed white; */
+  height: 100%;
+  display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+  padding: 10px 0;
+}
+
+.ft-col-1 {
+  flex: 1;
+}
+
+.ft-col-2 {
+  flex: 1;
+}
+
+.ft-col-3 {
+  flex: 1;
+}
+
+.ft-col-4 {
+  flex: 2;
+}
+
+.ft-h4 {
+  color: white;
+  font-size: 20px;
+}
+
+.ft-links {
+  color: white;
+  font-size: 14px;
+}
