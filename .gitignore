@@ -24,3 +24,6 @@ yarn-error.log*
 
 # npm
 package-lock.json
+
+# token
+/src/constants/token/*
