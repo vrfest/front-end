@@ -43,7 +43,7 @@ body{
 
 .landing-paper-bot{
     height: 600px;
-    background: linear-gradient(-270deg, rgb(7, 7, 7), rgb(7, 7, 7), rgb(7, 7, 7));
+    background: linear-gradient(-270deg, rgb(58, 56, 56), rgb(41, 40, 40), rgb(7, 7, 7));
 
 }
 
@@ -58,7 +58,7 @@ body{
     max-width: 1000px;
     max-height: 500px;
     overflow: auto;
-    background-color: rgb(7, 7, 7)
+    background-color: transparent
 }
 
 /* Footer */
@@ -99,4 +99,24 @@ body{
 .logo-header{
     width: 140px;
     height: 70px;
+}
+
+.container-fosc{
+    max-width: 2000px;
+    max-height: 500px;
+    height: 300px;
+    width: 100%;
+}
+
+.inner-fosc{
+    max-height: 360px;
+    height: 100%;
+}
+
+.big-card{
+    height: 300px;
+}
+
+.front-slide{
+    margin: 10px 10px;
 }

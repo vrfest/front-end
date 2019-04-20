@@ -1,6 +1,7 @@
 import React from 'react';
 import { Grid, Paper, List } from '@material-ui/core';
 import SmallCard from '../components/SmallCard';
+import FrontSlide from './FrontSlide';
 import { artists } from '../constants/initialState.json';
 
 export default class LandingPage extends React.Component{
@@ -14,6 +15,7 @@ export default class LandingPage extends React.Component{
         return(
             <Paper className="landing-paper" square={true}>
                 <Paper className="landing-paper-top" square={true}>
+                    {/* <FrontSlide/> */}
                 </Paper>
                 <Paper className="landing-paper-bot" square={true}>
                     <Grid>
