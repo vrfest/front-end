@@ -14,25 +14,23 @@ body {
 
 /* Base */
 .login {
+  background-color: #f8f8f8;
   border: 1px solid red;
-  height: 100vh;
   display: flex;
     justify-content: center;
     align-items: center;
-  background-color: #f8f8f8;
+  height: 100vh;
 }
 
 .login-box {
-  /* margin: 0 8%; */
-  border: 1px solid #e6e6e6;
   background-color: #ffffff;
-  padding: 15px 4%;
-  width: 500px;
-  /* height: 500px; */
+  border: 1px solid #e6e6e6;
   display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
+  padding: 15px 4%;
+  width: 500px;
 }
 
 img {
@@ -46,11 +44,11 @@ img {
 
 input[type="email"], input[type="password"] {
   display: block;
-  width: 100%;
   height: 45px;
   line-height: 200px;
   margin-bottom: 40px;
   padding: 6px 0 6px 16px;
+  width: 100%;
 }
 
 .label {
