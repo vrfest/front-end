@@ -84,6 +84,9 @@ export default class Footer extends React.Component {
                 </div>
                 <div className="ft-col-4">
                     <h4 className="ft-h4">Search</h4>
+                    <a className="ft-links" href="/">Twitter</a>
+                    <a className="ft-links" href="/">Instagram</a>
+                    <a className="ft-links" href="/">Facebook</a>
                     {/* Social Links */}
                 </div>
             </div>
