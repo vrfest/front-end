@@ -1,5 +1,6 @@
 import React from 'react';
 import { Paper, Grid, InputBase } from '@material-ui/core';
+import { Link } from 'react-router-dom';
 
 export default class Footer extends React.Component{
     render(){
@@ -10,8 +11,8 @@ export default class Footer extends React.Component{
                         <div>
                         <Grid container direction="column">
                             <h4 style={{color:'white'}}>Quick Links</h4>
-                            <h6 className="footer-link">Data</h6>
-                            <h6 className="footer-link">Recomendation</h6>
+                            <Link to="/dashboard"><h6 className="footer-link">Dashboard</h6></Link>
+                            <Link to="/"><h6 className="footer-link">Home Page</h6></Link>
                             <h6 className="footer-link">Map</h6>
                         </Grid>
                         </div>

@@ -37,7 +37,7 @@ body{
 
 .landing-paper-top{
     height: 500px;
-    background: linear-gradient(-270deg, rgb(219, 203, 203), rgb(219, 203, 203), rgb(219, 203, 203));
+    background: linear-gradient(-270deg, rgb(248, 244, 244), rgb(248, 244, 244), rgb(248, 244, 244));
 
 }
 
@@ -140,10 +140,44 @@ body{
 }
 
 .event-title{
-    margin: 1% 50%;
+    margin: 1% 46%;
 }
 
 .dashboard-container{
     background: linear-gradient(-270deg, rgb(58, 56, 56), rgb(41, 40, 40), rgb(7, 7, 7));
     padding: 1%;
+}
+
+.banner-title{
+    margin-top: 5%;
+    color: cadetblue;
+}
+
+.home-paper-search{
+    padding: 2px 4px;
+    width: 600px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+.home-header{
+    color: aliceblue
+}
+
+.home-input{
+    margin-left: 8px;
+    flex: 1;
+}
+
+.home-input-paper{
+    height: 33px;
+    width: 90px;
+    background: linear-gradient(-270deg, rgb(81, 230, 205, 0.7), rgb(26, 126, 219));
+    align-items: center;
+    display: flex;
+    padding: 20px;
+}  
+
+.landing-bottom{
+    height: 200px;
 }

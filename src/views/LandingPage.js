@@ -1,42 +1,26 @@
 import React from 'react';
-import { Grid, Paper, List } from '@material-ui/core';
-import SmallCard from '../components/SmallCard';
-import FrontSlide from './FrontSlide';
-import { artists } from '../constants/initialState.json';
-import background from '../constants/images/background.png';
+import {Grid, Paper, InputBase} from '@material-ui/core';
 
 export default class LandingPage extends React.Component{
-    renderArtist = (artist) => (
-        <div key={artist.name} className="small-card-region">
-            <SmallCard artist={artist}/>
-        </div>
-    )
-
     render(){
         return(
-            <div className="landing-paper">
-                <div className="landing-paper-top">
-                    <img src={background} className="background-img" alt=""/>
+            <div>
+                <Grid container direction="column" alignItems="center">
+                <h3 className="banner-title"> VRFest </h3>
+                <h6 style={{marginTop: '2%'}}>VR festivals and concerts with your favourite artists.</h6>
+                <h6> Sign up to the waitlist for $10 off your first ticket.</h6>
+                <Paper className="home-paper-search">
+                    <InputBase className="home-input" placeholder="Enter your email here" />
+                    {/* <Typography className="home-input">Get your store recomendation</Typography> */}
+                    <Paper className="home-input-paper" square={true} onClick={() => console.log("click")}>
+                        <h6 className="home-header" style={{marginTop: 10}}>Submit</h6>
+                    </Paper>
+                </Paper>
+                </Grid> 
+                <div className="landing-bottom">
+
                 </div>
-                <div className="landing-paper-bot">
-                    <div className="event-title">
-                        <h2 className="header-date">Event</h2>
-                    </div>
-                    <div style={{marginTop: '1%'}}>
-                    {/* <List className="small-card-list">
-                        {
-                            artists.map(artist => (this.renderArtist(artist)))
-                        }
-                    </List> */
-                    }
-                    <Grid container direction="column">
-                        {
-                            artists.map(artist => (this.renderArtist(artist)))
-                        }
-                    </Grid>
-                    </div>  
-                </div>
-            </div>        
+            </div>    
         )
     }
 }
