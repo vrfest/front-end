@@ -38,7 +38,7 @@ a {
   width: 500px;
 }
 
-img {
+.form-logo {
   height: 100px;
   margin-top: 10px;
   width: 100px;
@@ -72,14 +72,16 @@ input[type="email"], input[type="password"] {
   margin-bottom: 20px;
 }
 
-button {
+.btn-signin {
   background-color: #707070;
+  background-image: linear-gradient(to right, #00c352, #00c698 79%, #00c7b8);
   cursor: pointer;
   color: #ffffff;
   border: none;
   height: 50px;
-  border-radius: 5px;
-  text-transform: uppercase;
-  margin-bottom: 10px;
+  /* border-radius: 5px; */
+  border-radius: 35px;
+  /* text-transform: uppercase; */
+  margin-bottom: 20px;
   width: 200px;
 }

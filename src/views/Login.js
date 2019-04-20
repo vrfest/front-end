@@ -7,7 +7,7 @@ export default class LandingPage extends React.Component {
         return (
             <div className="login">
                 <div className="login-box">
-                    <img src={image} alt="Logo" />
+                    <img className="form-logo" src={image} alt="Logo" />
 
                     <h1 className="h1">Your Community Awaits</h1>
 
@@ -23,7 +23,7 @@ export default class LandingPage extends React.Component {
 
                         <a href="#"> Forgot Your Password?</a>
                     </div>
-                    <button>Sign In</button>
+                    <button className="btn-signin">Sign In</button>
 
                     <p>Don't have an VRFest account? <a href="/signup">Sign Up</a></p>
                 </div>

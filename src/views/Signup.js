@@ -18,7 +18,7 @@ export default class LandingPage extends React.Component {
                     <input type="email" name="email" placeholder="*Email" required />
                     <input type="password" name="password" placeholder="*Password" required />
 
-                    <button>Sign In</button>
+                    <button className="btn-signin">Sign Up</button>
 
                     <p>Have an VRFest account? <a href="/login">Sign In</a></p>
                 </div>
