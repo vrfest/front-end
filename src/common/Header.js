@@ -11,7 +11,7 @@ export default class Header extends React.Component {
                         <Grid>☰</Grid>
                         <Grid>Brand</Grid>
                         <div className="header-login-box">
-                            <Grid container direction="row" justify="space-around">
+                            <Grid className="header-login-box-child" container direction="row" justify="space-around">
                                 <Typography style={{ marginRight: 10 }}>Login</Typography>
                                 <Typography>Logout</Typography>
                             </Grid>

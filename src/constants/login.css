@@ -12,10 +12,15 @@ body {
   margin: 0;
 }
 
+a {
+  color: #0ab7f4;
+  text-decoration: none;
+}
+
 /* Base */
 .login {
   background-color: #f8f8f8;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
     justify-content: center;
     align-items: center;
@@ -46,14 +51,16 @@ input[type="email"], input[type="password"] {
   display: block;
   height: 45px;
   line-height: 200px;
-  margin-bottom: 40px;
+  margin-bottom: 35px;
   padding: 6px 0 6px 16px;
   width: 100%;
 }
 
 .label {
   font-weight: bold;
+  text-align: start;
   text-transform: uppercase;
+  width: 100%;
 }
 
 .form-row {
