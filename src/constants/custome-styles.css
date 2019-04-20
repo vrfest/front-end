@@ -1,0 +1,93 @@
+.header-navbar{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    height: 70px;
+    background: linear-gradient(-270deg, rgb(41, 41, 41), rgb(41, 41, 41), rgb(41, 41, 41));
+    /* background: #2a2a2a; */
+    z-index: 100;
+}
+
+body{
+    margin: 0px;
+}
+
+.header-box{
+    margin: 2% 1%;
+}
+
+.header-login-box{
+    margin-right: 2%
+}
+
+.landing-paper{
+    height: 1100px;
+    background: linear-gradient(-270deg, rgb(7, 7, 7), rgb(7, 7, 7), rgb(7, 7, 7));
+
+}
+
+.landing-paper-top{
+    height: 500px;
+    background: linear-gradient(-270deg, rgb(219, 203, 203), rgb(219, 203, 203), rrgb(219, 203, 203));
+
+}
+
+.landing-paper-bot{
+    height: 600px;
+    background: linear-gradient(-270deg, rgb(7, 7, 7), rgb(7, 7, 7), rgb(7, 7, 7));
+
+}
+
+
+.small-card-region{
+    width: 600px;
+    margin: 2% 25%;
+}
+
+.small-card-list{
+    width: 1000px;
+    max-width: 1000px;
+    max-height: 500px;
+    overflow: auto;
+    background-color: rgb(7, 7, 7)
+}
+
+/* Footer */
+.footer-container{
+    height: 250px;
+    bottom: 0px;
+    background: linear-gradient(-270deg, rgb(41, 41, 41), rgb(41, 41, 41), rgb(41, 41, 41));
+}
+
+.footer-link{
+    color: silver
+}
+
+.footer-newleter{
+    width: 340px;
+    height: 40px;
+    /* margin-left: 8px; */
+    flex: 1;
+}
+
+.footer-input{
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.footer-button{
+    height: 40px;
+    width: 40px;
+    background: linear-gradient(-270deg, rgb(81, 230, 205, 0.7), rgb(26, 126, 219));
+}
+
+.copy-footer{
+    color: white;
+    margin-top: 2%;
+    margin-left: 9%;
+}
+
+.logo-header{
+    width: 140px;
+    height: 70px;
+}
