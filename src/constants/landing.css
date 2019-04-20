@@ -31,24 +31,21 @@
 .form-word-logo {
   height: 65px;
   width: 275px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 .landing-h1 {
   font-size: 64px;
   letter-spacing: 8px;
   font-weight: bold;
-  margin-bottom: 30px;
-  /* margin-top: 20px; */
-  /* color: black; */
+  margin-bottom: 25px;
 }
 
 .landing-h2 {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 8px;
   letter-spacing: 1px;
-  /* color: black; */
 }
 
 .landing-form {

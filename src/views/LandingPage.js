@@ -27,8 +27,8 @@ export default class LandingPage extends React.Component {
                     <img className="form-logo" src={image} alt="Logo" />
                     <img className="form-word-logo" src={wordLogo} alt="VRFest" />
 
-                    <h2 className="landing-h2">VR festivals and concerts with your favorite artists</h2>
-                    <h2 className="landing-h2">Sign up to the waitlist for $10 off your first ticket</h2>
+                    <h2 className="landing-h2">VR festivals and concerts with your favorite artists.</h2>
+                    <h2 className="landing-h2">Sign up to the waitlist for $10 off your first ticket.</h2>
 
                     <form className="landing-form">
                         <input className="landing-input" onChange={this.handleChange} type="text" placeholder="e.g first.last@gmail.com" />

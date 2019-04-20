@@ -12,9 +12,9 @@ class App extends Component {
     return (
       <FirebaseDatabaseProvider firebase={firebase} {...config}>
         <div>
-          <Header/>
+          {/* <Header/> */}
             <RouteHandler/>
-          <Footer/>
+          {/* <Footer/> */}
         </div>
       </FirebaseDatabaseProvider>
     );
