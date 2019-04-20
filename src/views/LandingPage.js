@@ -1,8 +1,15 @@
 import React from 'react';
 import { Grid, Paper, List } from '@material-ui/core';
 import SmallCard from '../components/SmallCard';
+import { artists } from '../constants/initialState.json';
 
 export default class LandingPage extends React.Component{
+    renderArtist = (artist) => (
+        <div className="small-card-region">
+            <SmallCard artist={artist}/>
+        </div>
+    )
+
     render(){
         return(
             <Paper className="landing-paper" square={true}>
@@ -14,19 +21,9 @@ export default class LandingPage extends React.Component{
                     </Grid>
                     <div style={{marginLeft: '10%', marginTop: '2%'}}>
                     <List className="small-card-list">
-                        <div className="small-card-region">
-                            <SmallCard />
-                        </div>
-
-                        <div className="small-card-region">
-                            <SmallCard />
-                        </div>
-                        <div className="small-card-region">
-                            <SmallCard />
-                        </div>
-                        <div className="small-card-region">
-                            <SmallCard />
-                        </div>
+                        {
+                            artists.map(artist => (this.renderArtist(artist)))
+                        }
                     </List>
                     </div>  
                 </Paper>

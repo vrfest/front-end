@@ -6,8 +6,9 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import IconButton from '@material-ui/core/IconButton';
 import Typography from '@material-ui/core/Typography';
-import { Grid } from '@material-ui/core';
- 
+import SkipPreviousIcon from '@material-ui/icons/SkipPrevious';
+import PlayArrowIcon from '@material-ui/icons/PlayArrow';
+import SkipNextIcon from '@material-ui/icons/SkipNext';
 
 const styles = theme => ({
   card: {
@@ -40,28 +41,23 @@ function MediaControlCard(props) {
 
   return (
     <Card className={classes.card}>
-    <Grid container direction="row" justify="space-evenly">
-        <div className={classes.details}>
+      <div className={classes.details}>
         <CardContent className={classes.content}>
           <Typography component="h5" variant="h5">
             {props.artist.name}
           </Typography>
           <Typography variant="subtitle1" color="textSecondary">
-            Add something here
+            Some Thing
           </Typography>
         </CardContent>
-        {/* <div className={classes.controls}>
-          <IconButton aria-label="Play/pause">
-            <PlayArrowIcon className={classes.playIcon} />
-          </IconButton>
-        </div> */}
+        <div className={classes.controls}>
+        </div>
       </div>
       <CardMedia
         className={classes.cover}
         image={props.artist.image}
         title="Live from space album cover"
       />
-    </Grid>
     </Card>
   );
 }
