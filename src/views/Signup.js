@@ -5,8 +5,8 @@ import image from '../constants/images/logo.png';
 export default class LandingPage extends React.Component {
     render() {
         return (
-            <div className="login">
-                <div className="login-box">
+            <div className="signup">
+                <div className="signup-box">
                     <img src={image} alt="Logo" />
 
                     <h1 className="h1">Create Account</h1>
