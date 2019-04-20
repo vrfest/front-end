@@ -1,9 +1,23 @@
 import React from 'react';
 // import { Grid, Paper, InputBase } from '@material-ui/core';
 import '../constants/landing.css';
+import { FirebaseDatabaseMutation } from '@react-firebase/database';
 import image from '../constants/images/vrlogo.png';
 
+const path = "user_emails";
+
 export default class LandingPage extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            email : null,
+        }
+    }
+
+    handleChange = (event) => {
+        this.setState({email: event.target.value});
+    }
+
     render() {
         return (
             <div className="landing">
@@ -15,8 +29,23 @@ export default class LandingPage extends React.Component {
                     <h2 className="landing-h2">Sign up to the waitlist for $10 off your first ticket</h2>
 
                     <form className="landing-form">
-                        <input className="landing-input" type="text" placeholder="e.g first.last@gmail.com" />
-                        <button className="landing-button">Sign up</button>
+                        <input className="landing-input" onChange={this.handleChange} type="text" placeholder="e.g first.last@gmail.com" />
+                        <FirebaseDatabaseMutation type="push" path={path}>
+                            {({ runMutation }) => {
+                                return (
+                                <div>
+                                    <button className="landing-button"
+                                    data-testid="test-push"
+                                    onClick={async () => {
+                                        const { key } = await runMutation({ email : this.state.email });
+                                    }}
+                                    >
+                                    Sign up
+                                    </button>
+                                </div>
+                                );
+                            }}
+                        </FirebaseDatabaseMutation>
                     </form>
 
                 </div>
