@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+.login {
+  border: 1px solid red;
+  height: 100vh;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  background-color: #f8f8f8;
+}
+
+.login-box {
+  /* margin: 0 8%; */
+  border: 1px solid #e6e6e6;
+  background-color: #ffffff;
+  padding: 15px 4%;
+  width: 500px;
+  /* height: 500px; */
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input[type="email"], input[type="password"] {
+  display: block;
+  width: 100%;
+  height: 35px;
+  line-height: 200px;
+  margin-bottom: 40px;
+  padding: 6px 0 6px 16px;
+}
+
+.h1 {
+  text-align: center;
+}
+
+.label {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.form-row {
+  display: flex;
+    justify-content: space-between;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  /* margin-top: 25px; */
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}

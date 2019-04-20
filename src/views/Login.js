@@ -1,0 +1,32 @@
+import React from 'react';
+import '../constants/login.css';
+
+export default class LandingPage extends React.Component {
+    render() {
+        return (
+            <div className="login">
+                <div className="login-box">
+                    <img src="https://cdn.shopifycloud.com/hatchful-web/assets/2adcef6c1f7ab8a256ebdeba7fceb19f.png" alt="Logo" />
+
+                    <h1 className="h1">Your Community Awaits</h1>
+
+                    <p className="label">Sign In</p>
+                    <input type="email" name="email" placeholder="Email" />
+                    <input type="password" name="password" placeholder="Password" />
+
+                    <div className="form-row">
+                        <div className="form-row2">
+                            <input type="checkbox" id="re-me" placeholder="Password" />
+                            <label for="re-me">Remember Me</label>
+                        </div>
+
+                        <a href="https://google.com"> Forgot Your Password?</a>
+                    </div>
+                    <button>Sign In</button>
+
+                    <p>Don't have an Epic Games account? <a href="https://google.com">Sign Up</a></p>
+                </div>
+            </div>
+        )
+    }
+}
