@@ -2,6 +2,7 @@ import React from 'react';
 // import { Grid, Paper, InputBase } from '@material-ui/core';
 import '../constants/landing.css';
 import image from '../constants/images/vrlogo.png';
+import wordLogo from '../constants/images/vrfest.png';
 
 export default class LandingPage extends React.Component {
     render() {
@@ -10,7 +11,8 @@ export default class LandingPage extends React.Component {
                 <div className="landing-container">
 
                     <img className="form-logo" src={image} alt="Logo" />
-                    <h1 className="landing-h1">VRFEST</h1>
+                    <img className="form-word-logo" src={wordLogo} alt="VRFest" />
+
                     <h2 className="landing-h2">VR festivals and concerts with your favorite artists</h2>
                     <h2 className="landing-h2">Sign up to the waitlist for $10 off your first ticket</h2>
 
