@@ -11,11 +11,11 @@ const RouteHandler = () => (
     <main>
         <ScrollToTop>
         <Switch>
+            <Route exact path='/landing' component={LandingPage} />
             <Route exact path='/' component={HomePage} />
             <Route exact path='/login' component={Login} />
             <Route exact path='/signup' component={Signup} />
             <Route exact path='/dashboard' component={Dashboard} />
-            <Route exact path='/landing' component={LandingPage} />
         </Switch>
         </ScrollToTop>
     </main>
