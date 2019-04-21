@@ -31,7 +31,7 @@ export default class Header extends React.Component {
         this.handleClose();
         try{
             this.props.history.push('/homepage');
-            
+
         }catch(e){
             console.log(e);
         }
@@ -47,10 +47,10 @@ export default class Header extends React.Component {
 
                     <div className="navbar-right">
                     {
-                        getToken() && 
+                        getToken() &&
                         <Grid container direction="row" justify="space-between" alignItems="center">
                             <Avatar onClick={this.handleOpen} alt="Remy Sharp" src={user.avatar} className="big-avatar" />
-                            <h4 style={{color:'white', marginLeft : 10}}>{user.username}</h4>
+                            <h4 style={{color:'white', marginLeft : 10, textTransform: 'capitalize'}}>{user.username}</h4>
                         </Grid>
                     }
                     {
