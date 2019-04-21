@@ -1,42 +1,54 @@
 import React from 'react';
-import { Grid, Paper, List, IconButton, InputBase } from '@material-ui/core';
+// import { Grid, Paper, List, IconButton, InputBase } from '@material-ui/core';
 import SmallCard from '../components/SmallCard';
-import FrontSlide from './FrontSlide';
+// import FrontSlide from './FrontSlide';
 import { artists } from '../constants/initialState.json';
-import background from '../constants/images/background.png';
+// import background from '../constants/images/background.png';
 
-export default class HomePage extends React.Component{
-    renderArtist = (artist) => (
-        <div key={artist.name} className="small-card-region">
-            <SmallCard artist={artist}/>
-        </div>
-    )
+import Header from '../common/Header';
+import Footer from '../common/Footer';
+import '../constants/home.css';
 
-    render(){
-        return(
-            <div className="landing-paper">
-                <div className="landing-paper-top">
-                    <img src={background} className="background-img" alt=""/>
-                </div>
-                <div className="landing-paper-bot">
-                    <div className="event-title">
-                        <h2 className="header-date">Event</h2>
+export default class HomePage extends React.Component {
+    renderArtist = () => {
+        return artists.map((artist) => {
+            return (
+                <div className="home-card">
+                    <img className="home-card-img" src={artist.image} />
+
+                    <div className="home-card-text">
+                        <h3 className="home-h3">{artist.name}</h3>
+                        <h4 className="home-h4">{artist.date}</h4>
+                        <p className="home-p">{artist.content}</p>
                     </div>
-                    <div style={{marginTop: '1%'}}>
-                    {/* <List className="small-card-list">
-                        {
-                            artists.map(artist => (this.renderArtist(artist)))
-                        }
-                    </List> */
-                    }
-                    <Grid container direction="column">
-                        {
-                            artists.map(artist => (this.renderArtist(artist)))
-                        }
-                    </Grid>
-                    </div>  
+
+                    <div className="home-card-button">
+                        <h3 className="home-h3">{artist.cost + '$'}</h3>
+                        <button className="home-button">Buy Now</button>
+                    </div>
                 </div>
-            </div>        
+            );
+        });
+    }
+
+    render() {
+        return (
+            <div>
+                <Header />
+
+                <div className="home-splash">
+                    <h1 className="home-h1">Amazing concerts anytime, anywhere.</h1>
+                </div>
+
+                <div className="home-content">
+                    <h2 className="home-h2">events</h2>
+
+                    {this.renderArtist()}
+
+                </div>
+
+                <Footer />
+            </div>
         )
     }
 }
