@@ -2,6 +2,7 @@ import React from 'react';
 import '../constants/payment.css';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
+import {Link} from 'react-router-dom';
 
 export default class Payment extends React.Component {
     constructor(props) {
@@ -50,7 +51,7 @@ export default class Payment extends React.Component {
                                     <p>Balance</p>
                                     <p><b>300 VRT</b></p>
                                 </div>
-                                <button className="payment-btn">Buy with VRT</button>
+                                <Link to='/homepage'><button className="payment-btn">Buy with VRT</button></Link>
                             </div>
                         </div>
                     </div>
