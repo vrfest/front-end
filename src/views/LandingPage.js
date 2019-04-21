@@ -2,6 +2,7 @@ import React from 'react';
 import '../constants/landing.css';
 import { FirebaseDatabaseMutation, FirebaseDatabaseNode } from '@react-firebase/database';
 import image from '../constants/images/logo.png';
+import logo from '../constants/images/landing-logo.png';
 import { config } from "../constants/config";
 import Clock from "./Clock";
 
@@ -73,7 +74,8 @@ export default class LandingPage extends React.Component {
         return (
             <div className="landing">
                 <div className="landing-container">
-                    <img className="form-logo" src={image} alt="Logo" />
+                    {/* <img className="form-logo" src={image} alt="Logo" /> */}
+                    <img className="form-logo" src={logo} alt="Logo" />
                     <h2 className="landing-h2">Sign up now to get $10 off your first VR concert ticket.</h2>
                     <Clock time={this.state.count} />
                     <form className="landing-form">

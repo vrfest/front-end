@@ -12,7 +12,7 @@ export default class Clock extends React.Component {
     const { time } = this.props;
     return (
       <div className="displayedTime">
-        <h1>{this.format(time)}</h1>
+        <h1 style={{ margin: 0, }}>{this.format(time)}</h1>
       </div>
     )
   }

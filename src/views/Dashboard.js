@@ -34,6 +34,8 @@ export default class Dashboard extends React.Component {
             <div>
                 <Header />
                 <div className="dashboard">
+                    <h2 className="dashboard-h2">My Wallet</h2>
+
                     <h2 className="dashboard-h2">My tickets</h2>
                     <div className="dashboard-feature">
                         <img className="dashboard-img" src="http://www.stickpng.com/assets/images/5bb36021554c7f08176ec0e4.png" />
