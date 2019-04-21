@@ -3,6 +3,7 @@ import React from 'react';
 import SmallCard from '../components/SmallCard';
 // import FrontSlide from './FrontSlide';
 import { artists } from '../constants/initialState.json';
+import { Button, Typography, Grid, Paper, TextField, Modal} from '@material-ui/core';
 // import background from '../constants/images/background.png';
 
 import Header from '../common/Header';
@@ -10,6 +11,14 @@ import Footer from '../common/Footer';
 import '../constants/home.css';
 
 export default class HomePage extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            open: false,
+            current_artist: artists[0],
+        };
+    }
+    
     renderArtist = () => {
         return artists.map((artist) => {
             return (
@@ -24,14 +33,29 @@ export default class HomePage extends React.Component {
 
                     <div className="home-card-button">
                         <h3 className="home-h3">{artist.cost + '$'}</h3>
-                        <button className="home-button">Buy Now</button>
+                        <button className="home-button" onClick={() => this.handleOpen(artist)}>Buy Now</button>
                     </div>
                 </div>
             );
         });
     }
 
+    
+    handleOpen = (artist) => {
+        this.setState({ open: true, current_artist:artist});
+    };
+
+    handleClose = () => {
+        this.setState({ open: false });
+    };
+
+    
+    handleSubmit = () => {
+        this.setState({ open: false });
+    };
+
     render() {
+        const { current_artist } = this.state;
         return (
             <div>
                 <Header />
@@ -46,7 +70,52 @@ export default class HomePage extends React.Component {
                     {this.renderArtist()}
 
                 </div>
+                {/* Model - todo */}
+                <Modal
+                    aria-labelledby="simple-modal-title"
+                    aria-describedby="simple-modal-description"
+                    open={this.state.open}
+                    onClose={this.handleClose}
+                    className="modal-style"
+                    >
+                    <Paper className="contact-form-confirm">
+                        {current_artist &&
+                        <Grid alignItems="center" justify="space-evenly" container direction='column' style={{marginTop: 50}}>
+                            <div className="home-card">
+                            <img className="home-card-img" src={current_artist.image} />
+                                <div className="home-card-text">
+                                    <h3 className="home-h3">{current_artist.name}</h3>
+                                    <h4 className="home-h4">{current_artist.date}</h4>
+                                    <p className="home-p">{current_artist.content}</p>
+                                </div>
 
+                                <div className="home-card-button">
+                                    <h3 className="home-h3">{current_artist.cost + '$'}</h3>
+                                </div>
+                            </div>
+                            <Grid container direction="column">
+                                <Grid container direction="row"></Grid>
+                                <h3>Tracks</h3>
+                                <div>
+                                <Grid container direction="column">
+                                    {
+                                        current_artist && current_artist.tracks.map((track,index) => (
+                                            <Grid container direction="row" justify="space-between">
+                                                <p>{index}. {track.name}</p>
+                                                <p>{track.time}</p>
+                                            </Grid>
+                                        ))
+                                    }
+                                </Grid>
+                                </div>
+                            </Grid>
+                        </Grid>
+                        }
+                        <Button variant="contained" onClick={this.handleSubmit} style={{marginBottom: '1%'}}>
+                            Buy Now
+                        </Button>
+                    </Paper>
+                </Modal>
                 <Footer />
             </div>
         )
