@@ -9,6 +9,7 @@ import { clearToken, getToken } from '../utils/LocalCache';
 
 export default class Header extends React.Component {
     state = {
+        open: false,
         user : getToken(),
     }
 
@@ -27,6 +28,12 @@ export default class Header extends React.Component {
     handleLogout = () => {
         clearToken();
         this.handleClose();
+        try{
+            this.props.history.push('/homepage');
+            
+        }catch(e){
+            console.log(e);
+        }
     }
     render() {
         const { user } = this.state;

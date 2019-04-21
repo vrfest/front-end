@@ -26,13 +26,17 @@ export default class LandingPage extends React.Component {
     }
 
     async handleSubmit() {
-        let checkU = await users.filter(user => user.email === this.state.email);        
-        if(checkU[0].password === this.state.password){
-            setToken(checkU[0]);
-            this.props.history.push('/dashboard');
-        }else{
-            console.log("Fail");
-        }
+        let checkU = await users.filter(user => user.email === this.state.email);   
+        try{
+            if(checkU[0].password === this.state.password){
+                setToken(checkU[0]);
+                this.props.history.push('/dashboard');
+            }else{
+                console.log("Fail");
+            }
+        }catch(e){
+            console.log(e);
+        }     
     }
 
     render() {
@@ -52,7 +56,7 @@ export default class LandingPage extends React.Component {
                         <div className="form-row">
                             <div className="form-row2">
                                 <input type="checkbox" id="re-me" placeholder="Password" />
-                                <label for="re-me">Remember Me</label>
+                                <label htmlFor="re-me">Remember Me</label>
                             </div>
 
                             <a href="/signup"> Forgot Your Password?</a>

@@ -25,7 +25,7 @@ export default class HomePage extends React.Component {
     renderArtist = () => {
         return artists.map((artist) => {
             return (
-                <div className="home-card">
+                <div key={artist.name} className="home-card">
                     <img className="home-card-img" src={artist.image} alt=""/>
 
                     <div className="home-card-text">
@@ -99,8 +99,8 @@ export default class HomePage extends React.Component {
 
                                 <div className="modal-tracks">
                                     <h3>Tracks</h3>
-                                    {current_artist.tracks.map(track => (
-                                        <div className="modal-li">
+                                    {current_artist.tracks.map((track,index) => (
+                                        <div key={index} className="modal-li">
                                             <p> • {track.name}</p>
                                             <p>{track.time}</p>
                                         </div>

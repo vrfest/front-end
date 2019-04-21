@@ -22,7 +22,7 @@ export default class Dashboard extends React.Component {
     renderArtist = () => {
         return artists.map((artist) => {
             return (
-                <div className="home-card">
+                <div key={artist.name} className="home-card">
                     <img className="home-card-img" src={artist.image} alt=""/>
 
                     <div className="home-card-text">
@@ -43,7 +43,7 @@ export default class Dashboard extends React.Component {
     renderNewArtist = () => {
         return newArtists.map((newArtists) => {
             return (
-                <div className="home-card">
+                <div key={newArtists.name} className="home-card">
                     <img className="home-card-img" src={newArtists.image} alt=""/>
 
                     <div className="home-card-text">
@@ -88,11 +88,11 @@ export default class Dashboard extends React.Component {
 
                         <div className="dashboard-wallet-text">
                             <h4 className="wallet-address">Wallet Address:</h4>
-                            <h4 className="wallet-address-value">{getToken().wallet}</h4>
+                            <h4 className="wallet-address-value">{getToken() && getToken().wallet}</h4>
 
                             <div className="wallet-balance">
                                 <h3 className="wallet-balance-value">Balance</h3>
-                                <h3 className="wallet-balance-value">{getToken().credits} VRT</h3>
+                                <h3 className="wallet-balance-value">{getToken() && getToken().credits} VRT</h3>
                             </div>
 
                         </div>
@@ -142,8 +142,8 @@ export default class Dashboard extends React.Component {
 
                                 <div className="modal-tracks">
                                     <h3>Tracks</h3>
-                                    {current_artist.tracks.map(track => (
-                                        <div className="modal-li">
+                                    {current_artist.tracks.map((track,index) => (
+                                        <div key={index} className="modal-li">
                                             <p> • {track.name}</p>
                                             <p>{track.time}</p>
                                         </div>
