@@ -14,12 +14,7 @@ export default class LandingPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-<<<<<<< HEAD
-            email : null,
-            users: null,
-=======
             email: null,
->>>>>>> ccde3ee005d5f8b5078a88c35b527b10c284f9ba
         }
         // this.test();
     }
