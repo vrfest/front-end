@@ -1,11 +1,11 @@
 {
     "artists": [
         {
-            "name": "Post Malone",
-            "image": "http://www.stickpng.com/assets/images/5bb36021554c7f08176ec0e4.png",
+            "name": "Sickick",
+            "image": "https://i.imgur.com/Yq9kJpX.png",
             "date": "Nov. 19, 2019",
             "cost": "20",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "content": "Sickick (born 1988-10-25) is a Canadian EDM artist, producer and vocalist who mixes R&B vocals with dark tones. He worked behind the scenes as a producer and writer for several mainstream artists. He uploads remixes of top artists' songs to his YouTube channel. His remix of iLoveMakonnen @Tuesday ft. Drake accumulated more than 1.25 million views in just seven months. The Sickick team also includes manager and creative partner Rayn Magic. Both have recently partnered with Much Digital Studios to bring their content to the forefront of the entertainment scene.",
             "tracks": [
                 {
                     "name": "I want to ... you ",
@@ -34,10 +34,11 @@
             ]
         },
         {
-            "name": "Jay Z",
-            "image": "http://3.bp.blogspot.com/_wevkEt-i9rw/R0ZYMfL9WxI/AAAAAAAAACE/17RMa7P35es/s320/jay-z-4.png",
+            "name": "Ariana Grande",
+            "image": "https://charts-static.billboard.com/img/2011/02/ariana-grande-ypy.jpg",
             "date": "Nov. 19, 2019",
             "cost": "15",
+            "content": "Ariana Grande-Butera is an American singer, songwriter and actress. As one of the world's leading contemporary recording artists, she is known for her wide vocal range and has received such accolades including one Grammy Award, one Brit Award and three American Music Awards. Ariana Grande-Butera is an American singer, songwriter and actress. As one of the world's leading contemporary recording artists, she is known for her wide vocal range and has received such accolades including one Grammy Award, one Brit Award and three American Music Awards.",
             "tracks": [
                 {
                     "name": "I want to ... you ",
@@ -63,14 +64,14 @@
                     "name": "I want to ... you ",
                     "time": "00:00"
                 }
-            ],
-            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            ]
         },
         {
             "name": "Beyonce",
-            "image": "https://pmcvariety.files.wordpress.com/2017/09/beyonce.png",
+            "image": "https://pbs.twimg.com/profile_images/1054790574086201345/hnnkdKJm_400x400.jpg",
             "date": "Nov. 19, 2019",
             "cost": "25",
+            "content": "DescriptionBelcalis Marlenis Almánzar, known professionally as Cardi B, is an American rapper, songwriter, and television personality. Born and raised in The Bronx, New York City, she became an internet celebrity after several of her posts and videos went viral on Vine and Instagram. Cardi B has since earned three number-one singles on the Billboard Hot 100, the most of any female rapper; Bodak Yellow made her the second female rapper to top the chart with a solo output.",
             "tracks": [
                 {
                     "name": "I want to ... you ",
@@ -96,8 +97,7 @@
                     "name": "I want to ... you ",
                     "time": "00:00"
                 }
-            ],
-            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            ]
         },
         {
             "name": "Eminem",
