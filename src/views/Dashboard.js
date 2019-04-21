@@ -8,6 +8,7 @@ import { Button, Typography, Grid, Paper, TextField, Modal } from '@material-ui/
 import '../constants/dashboard.css';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
+import card from '../constants/images/card.png';
 
 export default class Dashboard extends React.Component {
     constructor(props) {
@@ -82,7 +83,7 @@ export default class Dashboard extends React.Component {
                     <h2 className="dashboard-h2">My Wallet</h2>
                     <div className="dashboard-wallet">
                         <div className="dashboard-card">
-
+                            <img className="dashboard-card-img" src={card} alt="Wallet" />
                         </div>
 
                         <div className="dashboard-wallet-text">
@@ -96,7 +97,6 @@ export default class Dashboard extends React.Component {
 
                         </div>
                     </div>
-
 
                     <h2 className="dashboard-h2">My tickets</h2>
                     <div className="dashboard-feature">
@@ -143,7 +143,6 @@ export default class Dashboard extends React.Component {
                                 <div className="modal-tracks">
                                     <h3>Tracks</h3>
 
-                                    {/* <ul> */}
                                     <div className="modal-li">
                                         <p> • I'm a survivor</p>
                                         <p>0:00</p>
@@ -176,29 +175,9 @@ export default class Dashboard extends React.Component {
                                         <p> • I'm a survivor</p>
                                         <p>0:00</p>
                                     </div>
-
-                                    {/* </ul> */}
-
                                 </div>
 
                                 <button className="modal-btn">Buy Now</button>
-
-                                {/* <Grid container direction="column">
-                                    <Grid container direction="row"></Grid>
-                                    <h3>Tracks</h3>
-                                    <div>
-                                        <Grid container direction="column">
-                                            {
-                                                current_artist && current_artist.tracks.map((track, index) => (
-                                                    <Grid container direction="row" justify="space-between">
-                                                        <p>{index}. {track.name}</p>
-                                                        <p>{track.time}</p>
-                                                    </Grid>
-                                                ))
-                                            }
-                                        </Grid>
-                                    </div>
-                                </Grid> */}
 
                             </Grid>
                         }

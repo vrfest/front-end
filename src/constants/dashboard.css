@@ -66,6 +66,12 @@
   flex: 1;
 }
 
+.dashboard-card img {
+  height: 100%;
+  object-fit: contain;
+  width: 98%;
+}
+
 .dashboard-feature {
   width: 100%;
   padding: 10px 4%;
