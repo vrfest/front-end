@@ -60,9 +60,9 @@ export default class Dashboard extends React.Component {
 
                     <h2 className="dashboard-h2">My tickets</h2>
                     <div className="dashboard-feature">
-                        <img className="dashboard-img" src="http://www.stickpng.com/assets/images/5bb36021554c7f08176ec0e4.png" />
+                        <img className="dashboard-img" src="https://charts-static.billboard.com/img/2011/02/ariana-grande-ypy.jpg" />
                         <img className="dashboard-img" src="https://i.imgur.com/Yq9kJpX.png" />
-                        <img className="dashboard-img" src="http://www.stickpng.com/assets/images/5bb36021554c7f08176ec0e4.png" />
+                        <img className="dashboard-img" src="https://pbs.twimg.com/profile_images/1054790574086201345/hnnkdKJm_400x400.jpg" />
                     </div>
 
                     <div className="dashboard-feature-time">
