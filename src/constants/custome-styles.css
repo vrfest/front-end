@@ -189,7 +189,7 @@ body{
     max-height: 900px;
     background-color: white;
     box-shadow: 2;
-    overflow: scroll;
+    overflow-y: scroll;
     outline: none;
 }
 
