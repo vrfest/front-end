@@ -14,7 +14,7 @@ export default class Header extends React.Component {
                     </div>
 
                     <div className="navbar-right">
-                        <button className="navbar-btn">Sign up / Login</button>
+                        <button className="navbar-btn"><a href="/login">Sign up / Login</a></button>
                         {/* <p><Link to="/login" style={{ textDecoration: 'none' }}>Login</Link> / <Link style={{ textDecoration: 'none' }} to="/signup">Signup</Link></p> */}
                     </div>
                     <div className="brand">vrfest</div>

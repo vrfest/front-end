@@ -49,6 +49,10 @@
   height: 48px;
 }
 
+.navbar-btn a {
+  color: black;
+}
+
 @media screen and (max-width: 650px) {
   .brand {
     display: none;
