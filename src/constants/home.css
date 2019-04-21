@@ -1,11 +1,11 @@
-/* Splash */
+/* Splash Section */
 .home-splash {
   height: 800px;
-  background-image: url(../constants/images/background.png);
   background-color: #151515;
+  background-image: url(../constants/images/background.png);
   background-position: bottom center;
-  background-size: 115%;
   background-repeat: no-repeat;
+  background-size: 115%;
 
 
   display: flex;
@@ -38,25 +38,28 @@
   color: white;
 }
 
-/* Content */
+/* Content Section */
 .home-content {
   display: flex;
     align-items: center;
     flex-direction: column;
   background-color: #151515;
   padding-bottom: 25px;
+  font-family: Montserrat;
 }
 
 .home-h2 {
-  margin: 40px 0;
   color: white;
-  font-weight: bold;
+  font-size: 40px;
+  font-weight: 500;
+  margin: 40px 0;
+  padding: 0 4%;
+  text-align: center;
+  width: 100%;
 }
 
 .home-card {
   font-family: Montserrat;
-  /* border: 1px solid #141414; */
-  /* margin: 0 4%; */
   width: 92%;
   height: 200px;
   margin-bottom: 40px;
@@ -66,7 +69,6 @@
 }
 
 .home-card-img {
-  /* border: 1px dashed yellow; */
   height: 100%;
   width: 200px;
   margin: 0;
@@ -90,18 +92,15 @@
 
 .home-p {
   color: #707070;
-  /* font-weight: 500; */
   font-size: 12px;
 }
 
 .home-card-text {
-  /* border: 1px dashed yellow; */
   flex: 1;
   padding: 20px;
 }
 
 .home-card-button {
-  /* border: 1px dashed yellow; */
   padding: 20px;
   width: 200px;
 }

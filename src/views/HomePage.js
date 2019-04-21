@@ -21,8 +21,8 @@ export default class HomePage extends React.Component {
         };
     }
 
-    componentDidMount(){
-        this.setState({ username: getToken()});
+    componentDidMount() {
+        this.setState({ username: getToken() });
     }
 
     renderArtist = () => {
@@ -89,18 +89,7 @@ export default class HomePage extends React.Component {
                     <Paper className="contact-form-confirm">
                         {current_artist &&
                             <Grid alignItems="center" justify="space-evenly" container direction='column' style={{ marginTop: 50 }}>
-                                {/* <div className="home-card">
-                                    <img className="home-card-img" src={current_artist.image} />
-                                    <div className="home-card-text">
-                                        <h3 className="home-h3">{current_artist.name}</h3>
-                                        <h4 className="home-h4">{current_artist.date}</h4>
-                                        <p className="home-p">{current_artist.content}</p>
-                                    </div>
-
-                                    <div className="home-card-button">
-                                        <h3 className="home-h3">{current_artist.cost + '$'}</h3>
-                                    </div>
-                                </div> */}
+                                {/* Card Section */}
                                 <div className="modal-card">
                                     <img className="modal-img" src={current_artist.image} />
                                     <div className="modal-text">
@@ -116,7 +105,6 @@ export default class HomePage extends React.Component {
                                 <div className="modal-tracks">
                                     <h3>Tracks</h3>
 
-                                    {/* <ul> */}
                                     <div className="modal-li">
                                         <p> • I'm a survivor</p>
                                         <p>0:00</p>
@@ -150,28 +138,10 @@ export default class HomePage extends React.Component {
                                         <p>0:00</p>
                                     </div>
 
-                                    {/* </ul> */}
 
                                 </div>
 
                                 <button className="modal-btn">Buy Now</button>
-
-                                {/* <Grid container direction="column">
-                                    <Grid container direction="row"></Grid>
-                                    <h3>Tracks</h3>
-                                    <div>
-                                        <Grid container direction="column">
-                                            {
-                                                current_artist && current_artist.tracks.map((track, index) => (
-                                                    <Grid container direction="row" justify="space-between">
-                                                        <p>{index}. {track.name}</p>
-                                                        <p>{track.time}</p>
-                                                    </Grid>
-                                                ))
-                                            }
-                                        </Grid>
-                                    </div>
-                                </Grid> */}
 
                             </Grid>
                         }
