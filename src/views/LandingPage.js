@@ -17,10 +17,9 @@ export default class LandingPage extends React.Component {
         super(props);
         this.state = {
             email: null,
-            count: 75600,
+            count: Math.floor((1555894800000 - (new Date()).getTime()) / 1000),
             running: false,
         }
-        // this.test();
         this.handleStart()
     }
 
