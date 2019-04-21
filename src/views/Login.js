@@ -5,7 +5,35 @@ import image from '../constants/images/logo.png';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 
+import { users } from '../constants/initialState.json';
+import { setToken } from '../utils/LocalCache';
+
 export default class LandingPage extends React.Component {
+    constructor(props){
+        super(props);
+        this.state = {
+            email : "",
+            password : "",
+        }
+    }
+
+    handleChangeEmail = (event) => {
+        this.setState({ email: event.target.value });
+    }
+
+    handleChangePass = (event) => {
+        this.setState({ password: event.target.value });
+    }
+
+    async handleSubmit() {
+        let checkU = await users.filter(user => user.email === this.state.email);        
+        if(checkU[0].password === this.state.password){
+            setToken(checkU[0].name);
+        }else{
+            console.log("Fail");
+        }
+    }
+
     render() {
         return (
             <div>
@@ -17,8 +45,8 @@ export default class LandingPage extends React.Component {
                         <h1 className="h1">Your Community Awaits</h1>
 
                         <p className="label">Sign In</p>
-                        <input type="email" name="email" placeholder="Email" required />
-                        <input type="password" name="password" placeholder="Password" required />
+                        <input type="email" onChange={this.handleChangeEmail} placeholder="Email" required/>
+                        <input type="password" onChange={this.handleChangePass} name="password" placeholder="Password" required />
 
                         <div className="form-row">
                             <div className="form-row2">
@@ -28,7 +56,7 @@ export default class LandingPage extends React.Component {
 
                             <a href="/signup"> Forgot Your Password?</a>
                         </div>
-                        <button className="btn-signin">Sign In</button>
+                        <button className="btn-signin" onClick={() => this.handleSubmit()}>Sign In</button>
 
                         <p>Don't have an VRFest account? <a href="/signup">Sign Up</a></p>
                     </div>
