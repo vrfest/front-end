@@ -66,9 +66,9 @@ export default class Footer extends React.Component {
             <div className="footer">
                 <div className="ft-col-1">
                     <h4 className="ft-h4">Quick Links</h4>
+                    <a className="ft-links" href="/homepage">Home</a>
                     <a className="ft-links" href="/dashboard">Dashboard</a>
-                    <a className="ft-links" href="/landing">Landing</a>
-                    <a className="ft-links" href="/">Map</a>
+                    <a className="ft-links" href="/">Landing</a>
                 </div>
                 <div className="ft-col-2">
                     <h4 className="ft-h4">Features</h4>
