@@ -6,6 +6,7 @@ import Signup from './views/Signup';
 import Dashboard from './views/Dashboard';
 import LandingPage from './views/LandingPage';
 import ScrollToTop from './components/ScrollToTop';
+import test from './playground/Modal';
 
 const RouteHandler = () => (
     <main>
@@ -16,6 +17,7 @@ const RouteHandler = () => (
             <Route exact path='/login' component={Login} />
             <Route exact path='/signup' component={Signup} />
             <Route exact path='/dashboard' component={Dashboard} />
+            <Route exact path='/test' component={test} />
         </Switch>
         </ScrollToTop>
     </main>

@@ -181,3 +181,22 @@ body{
 .landing-bottom{
     height: 200px;
 }
+
+.contact-form-confirm{
+    /* position: absolute; */
+    width: 1000px;
+    height: 900px;
+    background-color: white;
+    box-shadow: 2;
+    margin: 5% 10%;
+    outline: none;
+  }
+
+.modal-style {
+    position: absolute;
+    top: 10%;
+    left:10%;
+    overflow:scroll;
+    height:100%;
+    display:block
+}
