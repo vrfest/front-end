@@ -29,6 +29,7 @@ export default class LandingPage extends React.Component {
         let checkU = await users.filter(user => user.email === this.state.email);        
         if(checkU[0].password === this.state.password){
             setToken(checkU[0]);
+            this.props.history.push('/homepage');
         }else{
             console.log("Fail");
         }
