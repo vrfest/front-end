@@ -42,7 +42,7 @@ export default class Header extends React.Component {
             <div className="navbar">
                 <div className="navbar-main">
                     <div className="navbar-left">
-                        <Link to='/homepage'><img className="navbar-menu" src={icon} alt="Menu Icon" /></Link>
+                        <Link to='/dashboard'><img className="navbar-menu" src={icon} alt="Menu Icon" /></Link>
                     </div>
 
                     <div className="navbar-right">

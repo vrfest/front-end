@@ -60,7 +60,7 @@ export default class Payment extends React.Component {
                                     <p>Balance</p>
                                     <p><b>{getToken().creditsVRT} VRT</b></p>
                                 </div>
-                                <Link to='/homepage'><button onClick={this.handleBuy} className="payment-btn">Buy with VRT</button></Link>
+                                <Link to='/dashboard'><button onClick={this.handleBuy} className="payment-btn">Buy with VRT</button></Link>
                             </div>
                         </div>
                     </div>
