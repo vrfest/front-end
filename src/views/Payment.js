@@ -24,7 +24,7 @@ export default class Payment extends React.Component {
                             <div className="payment-card-text">
                                 <h3 className="payment-h3">Sickick</h3>
                                 <h4 className="payment-h4">Nov. 19, 2019</h4>
-                                <p className="payment-p">Sickick (born 1988-10-25) is a Canadian EDM artist, producer and vocalist who mixes R&B vocals with dark tones. He worked behind the scenes as a producer and writer for several mainstream artists.</p>
+                                <p className="payment-p">Sickick (born 1988-10-25) is a Canadian EDM artist, producer and vocalist who mixes R&B vocals with dark tones. He worked behind the scenes as a producer and writer for several mainstream artists. He uploads remixes of top artists' songs to his YouTube channel. His remix of iLoveMakonnen @Tuesday ft. Drake accumulated more than 1.25 million views in just seven months.</p>
                             </div>
                         </div>
 

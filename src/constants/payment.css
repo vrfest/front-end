@@ -1,17 +1,14 @@
-/* Payment */
+/* Payment Section */
 .payment {
-  /* border: 1px solid red; */
   background-color: #151515;
   background-image: linear-gradient(to right top, #1d1d1d, #1b1b1b, #191919, #171717, #151515);
-  /* height: 300px; */
   font-family: Montserrat;
 }
 
 .payment-container {
-  /* border: 1px solid purple; */
-  width: 92%;
-  margin: 0 auto;
   height: 100%;
+  margin: 0 auto;
+  width: 92%;
 }
 
 .payment-h2 {
@@ -22,14 +19,12 @@
   font-weight: 500;
 }
 
-/* Card */
+/* Card Section */
 .payment-card {
-  /* border: 1px solid yellow; */
-  font-family: Montserrat;
-  height: 200px;
-  margin: 0;
   display: flex;
-
+  height: 200px;
+  font-family: Montserrat;
+  margin: 0;
 }
 
 .payment-card-img {
@@ -103,6 +98,7 @@
   font-weight: 600;
   font-size: 16px;
   text-shadow: 0px 1px rgb(173, 173, 173);
+  width: 220px;
 }
 
 .payment-balance {
