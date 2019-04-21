@@ -1,4 +1,24 @@
 {
+    "users":[
+        {
+            "username":"natt",
+            "credits": 120,
+            "email": "nattpotato@gmail.com",
+            "password": "1234"
+        },
+        {
+            "username":"ying",
+            "credits": 10,
+            "email": "yingyang@gmail.com",
+            "password": "4321"
+        },
+        {
+            "username":"vite",
+            "credits": 340,
+            "email": "notlonely@gmail.com",
+            "password": "helloworld"
+        }
+    ],
     "artists": [
         {
             "name": "Post Malone",

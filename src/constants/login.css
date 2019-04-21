@@ -38,10 +38,11 @@ a {
   width: 500px;
 }
 
-.form-logo {
-  height: 100px;
+.login-box img {
+  height: calc(165px / 2);
   margin-top: 10px;
-  width: 100px;
+  margin-bottom: 40px;
+  width: calc(330px / 2);
 }
 
 .h1 {

@@ -2,6 +2,7 @@ import React from 'react';
 // import { Grid } from '@material-ui/core';
 // import SmallCard from '../components/SmallCard';
 import { artists } from '../constants/initialState.json';
+import { newArtists } from '../constants/newArtist.json';
 
 import '../constants/dashboard.css';
 import Header from '../common/Header';
@@ -22,6 +23,27 @@ export default class Dashboard extends React.Component {
 
                     <div className="home-card-button">
                         <h3 className="home-h3">{artist.cost + '$'}</h3>
+                        <button className="home-button">Buy Now</button>
+                    </div>
+                </div>
+            );
+        });
+    }
+
+    renderNewArtist = () => {
+        return newArtists.map((newArtists) => {
+            return (
+                <div className="home-card">
+                    <img className="home-card-img" src={newArtists.image} />
+
+                    <div className="home-card-text">
+                        <h3 className="home-h3">{newArtists.name}</h3>
+                        <h4 className="home-h4">{newArtists.date}</h4>
+                        <p className="home-p">{newArtists.content}</p>
+                    </div>
+
+                    <div className="home-card-button">
+                        <h3 className="home-h3">{newArtists.cost + '$'}</h3>
                         <button className="home-button">Buy Now</button>
                     </div>
                 </div>
@@ -53,7 +75,7 @@ export default class Dashboard extends React.Component {
                     {this.renderArtist()}
 
                     <h2 className="dashboard-h2">New Artists</h2>
-                    {this.renderArtist()}
+                    {this.renderNewArtist()}
 
                 </div>
 

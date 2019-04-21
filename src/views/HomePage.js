@@ -4,7 +4,7 @@ import SmallCard from '../components/SmallCard';
 // import FrontSlide from './FrontSlide';
 import { artists } from '../constants/initialState.json';
 import { Button, Typography, Grid, Paper, TextField, Modal } from '@material-ui/core';
-// import background from '../constants/images/background.png';
+import image from '../constants/images/samsung-gear.png';
 
 import Header from '../common/Header';
 import Footer from '../common/Footer';
@@ -61,12 +61,13 @@ export default class HomePage extends React.Component {
                 <Header />
 
                 <div className="home-splash">
+                    <img className="home-gear" src={image} alt="Gear VR" />
                     <h1 className="home-h1">Amazing concerts anytime, anywhere.</h1>
                     <button><a className="home-main-button" href="/signup">Sign Up</a></button>
                 </div>
 
                 <div className="home-content">
-                    <h2 className="home-h2">events</h2>
+                    <h2 className="home-h2">Events</h2>
 
                     {this.renderArtist()}
 
@@ -109,20 +110,41 @@ export default class HomePage extends React.Component {
                                 <div className="modal-tracks">
                                     <h3>Tracks</h3>
 
-                                    <ul>
-                                        <li className="modal-li">I'm a survivor</li>
-                                        <li className="modal-li">I'm a survivor</li>
-                                        <li className="modal-li">I'm a survivor</li>
-                                        <li className="modal-li">I'm a survivor</li>
-                                        <li className="modal-li">I'm a survivor</li>
-                                        <li className="modal-li">I'm a survivor</li>
-                                        <li className="modal-li">I'm a survivor</li>
-                                        <li className="modal-li">I'm a survivor</li>
-                                        <li className="modal-li">I'm a survivor</li>
-                                        <li className="modal-li">I'm a survivor</li>
-                                        <li className="modal-li">I'm a survivor</li>
-                                        <li className="modal-li">I'm a survivor</li>
-                                    </ul>
+                                    {/* <ul> */}
+                                    <div className="modal-li">
+                                        <p> • I'm a survivor</p>
+                                        <p>0:00</p>
+                                    </div>
+                                    <div className="modal-li">
+                                        <p> • I'm a survivor</p>
+                                        <p>0:00</p>
+                                    </div>
+                                    <div className="modal-li">
+                                        <p> • I'm a survivor</p>
+                                        <p>0:00</p>
+                                    </div>
+                                    <div className="modal-li">
+                                        <p> • I'm a survivor</p>
+                                        <p>0:00</p>
+                                    </div>
+                                    <div className="modal-li">
+                                        <p> • I'm a survivor</p>
+                                        <p>0:00</p>
+                                    </div>
+                                    <div className="modal-li">
+                                        <p> • I'm a survivor</p>
+                                        <p>0:00</p>
+                                    </div>
+                                    <div className="modal-li">
+                                        <p> • I'm a survivor</p>
+                                        <p>0:00</p>
+                                    </div>
+                                    <div className="modal-li">
+                                        <p> • I'm a survivor</p>
+                                        <p>0:00</p>
+                                    </div>
+
+                                    {/* </ul> */}
 
                                 </div>
 

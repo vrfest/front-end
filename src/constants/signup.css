@@ -35,12 +35,19 @@ body {
   /* margin-top: 80px; */
 }
 
-img {
+.signup-box img {
+  height: calc(165px / 2);
+  margin-top: 10px;
+  margin-bottom: 40px;
+  width: calc(330px / 2);
+}
+
+/* img {
   height: 100px;
   margin-bottom: 20px;
   margin-top: 10px;
   width: 100px;
-}
+} */
 
 .h1 {
   font-size: 28px;
