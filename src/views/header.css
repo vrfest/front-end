@@ -33,17 +33,15 @@
 }
 
 .brand {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 0.2px;
   position: absolute;
-    right: calc(50% - 48px);
+    right: calc(50% - 50px);
   color: white;
   font-family: Montserrat;
-  height: 100%;
-  margin: 0;
-}
-
-.navbar-main a {
   height: 24px;
-  width: 96px;
+  margin: 0;
 }
 
 .navbar-btn {

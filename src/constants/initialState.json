@@ -1,21 +1,21 @@
 {
-    "users":[
+    "users": [
         {
-            "username":"natt",
+            "username": "natt",
             "credits": 120,
             "email": "nattpotato@gmail.com",
             "password": "1234",
             "avatar":"https://www.guidedogs.org/wp-content/uploads/2018/01/Mobile.jpg"
         },
         {
-            "username":"ying",
+            "username": "ying",
             "credits": 10,
             "email": "yingyang@gmail.com",
             "password": "4321",
             "avatar":"https://www.guidedogs.org/wp-content/uploads/2018/01/Mobile.jpg"
         },
         {
-            "username":"vite",
+            "username": "vite",
             "credits": 340,
             "email": "notlonely@gmail.com",
             "password": "helloworld",
@@ -123,10 +123,11 @@
             ]
         },
         {
-            "name": "Eminem",
-            "image": "https://ui-ex.com/images/eminem-drawing-face-5.png",
+            "name": "Rihanna",
+            "image": "https://www.biography.com/.image/t_share/MTQzMzAxNjY1OTcyMjk5MzM1/rihanna_gettyimages-533588672jpg.jpg",
             "date": "Nov. 19, 2019",
             "cost": "30",
+            "content": "Robyn Rihanna Fenty is a Barbadian singer, businesswoman and actress. Born in Saint Michael and raised in Bridgetown, Rihanna was discovered by American record producer Evan Rogers in her home country in 2003. Throughout 2004, she recorded demo tapes under the direction of Rogers; this led to her securing a recording contract with Def Jam Recordings after she auditioned for its then-president, Jay-Z. Rihanna rose to fame with the release of her debut studio album Music of the Sun (2005) and its follow-up A Girl like Me (2006)..",
             "tracks": [
                 {
                     "name": "I want to ... you ",
@@ -152,8 +153,7 @@
                     "name": "I want to ... you ",
                     "time": "00:00"
                 }
-            ],
-            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            ]
         }
     ]
 }

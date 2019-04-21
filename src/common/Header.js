@@ -53,7 +53,7 @@ export default class Header extends React.Component {
                         {/* <p><Link to="/login" style={{ textDecoration: 'none' }}>Login</Link> / <Link style={{ textDecoration: 'none' }} to="/signup">Signup</Link></p> */}
                     </div>
                     {/* <div className="brand">vrfest</div> */}
-                    <img className="brand" src={brand} alt="VRFest Logo" />
+                    <a className="brand" href="/homepage"><img className="brand" src={brand} alt="VRFest Logo" /></a>
                 </div>
                 <Modal
                     aria-labelledby="simple-modal-title"

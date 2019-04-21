@@ -67,7 +67,7 @@ export default class HomePage extends React.Component {
                 <Header />
 
                 <div className="home-splash">
-                    <img className="home-gear" src={image} alt="Gear VR" />
+                    {/* <img className="home-gear" src={image} alt="Gear VR" /> */}
                     <h1 className="home-h1">Amazing concerts anytime, anywhere.</h1>
                     <button><a className="home-main-button" href="/signup">Sign Up</a></button>
                 </div>

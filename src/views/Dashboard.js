@@ -8,6 +8,7 @@ import { Button, Typography, Grid, Paper, TextField, Modal } from '@material-ui/
 import '../constants/dashboard.css';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
+import card from '../constants/images/card.png';
 
 export default class Dashboard extends React.Component {
     constructor(props) {
@@ -80,6 +81,22 @@ export default class Dashboard extends React.Component {
                 <Header />
                 <div className="dashboard">
                     <h2 className="dashboard-h2">My Wallet</h2>
+                    <div className="dashboard-wallet">
+                        <div className="dashboard-card">
+                            <img className="dashboard-card-img" src={card} alt="Wallet" />
+                        </div>
+
+                        <div className="dashboard-wallet-text">
+                            <h4 className="wallet-address">Wallet Address:</h4>
+                            <h4 className="wallet-address-value">15b768da67802179faf8db360cf3dc8fb0eab3f84c70e7</h4>
+
+                            <div className="wallet-balance">
+                                <h3 className="wallet-balance-value">Balance</h3>
+                                <h3 className="wallet-balance-value">300 VRT</h3>
+                            </div>
+
+                        </div>
+                    </div>
 
                     <h2 className="dashboard-h2">My tickets</h2>
                     <div className="dashboard-feature">
@@ -126,7 +143,6 @@ export default class Dashboard extends React.Component {
                                 <div className="modal-tracks">
                                     <h3>Tracks</h3>
 
-                                    {/* <ul> */}
                                     <div className="modal-li">
                                         <p> • I'm a survivor</p>
                                         <p>0:00</p>
@@ -159,29 +175,9 @@ export default class Dashboard extends React.Component {
                                         <p> • I'm a survivor</p>
                                         <p>0:00</p>
                                     </div>
-
-                                    {/* </ul> */}
-
                                 </div>
 
                                 <button className="modal-btn">Buy Now</button>
-
-                                {/* <Grid container direction="column">
-                                    <Grid container direction="row"></Grid>
-                                    <h3>Tracks</h3>
-                                    <div>
-                                        <Grid container direction="column">
-                                            {
-                                                current_artist && current_artist.tracks.map((track, index) => (
-                                                    <Grid container direction="row" justify="space-between">
-                                                        <p>{index}. {track.name}</p>
-                                                        <p>{track.time}</p>
-                                                    </Grid>
-                                                ))
-                                            }
-                                        </Grid>
-                                    </div>
-                                </Grid> */}
 
                             </Grid>
                         }
