@@ -194,21 +194,17 @@ body{
 
 /* Modal Style in Homepage */
 .modal-style {
-    position: relative;
-    top: 10%;
-    /* overflow:scroll; */
     height:100%;
     display: flex;
-    padding-top: 100px;
+    /* padding-top: 100px; */
     justify-content: center;
     align-items: center;
-    border-radius: 50px;
     overflow-x: hidden;
+    /* overflow-y: scroll; */
 }
 
 /* Modal Code */
 .modal-card {
-    /* border: 1px solid red; */
     height: 200px;
     width: 100%;
     padding: 0 40px;
@@ -260,6 +256,7 @@ body{
 
 .modal-btn {
     margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .big-avatar{
@@ -271,4 +268,8 @@ body{
 .logout-modal{
     margin-top:15%;
     outline: none;
+}
+
+.contact-form-confirm {
+    height: auto !important;
 }
