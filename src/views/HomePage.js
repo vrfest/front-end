@@ -122,7 +122,9 @@ export default class HomePage extends React.Component {
 
                                 </div>
 
-                                <button className="modal-btn">Buy Now</button>
+                                <button className="modal-btn">
+                                    <a href="/payment">Buy Now</a>
+                                </button>
 
                             </Grid>
                         }
