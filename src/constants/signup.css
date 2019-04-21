@@ -51,7 +51,6 @@ img {
 input[type="email"], input[type="password"], input[type="text"] {
   display: block;
   height: 45px;
-  line-height: 200px;
   margin-bottom: 35px;
   padding: 6px 0 6px 16px;
   width: 100%;
