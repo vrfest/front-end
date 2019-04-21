@@ -184,11 +184,12 @@ body{
 
 .contact-form-confirm{
     /* position: absolute; */
-    width: 1000px;
-    height: 900px;
+    width: 90vw;
+    height: 90vh;
+    max-height: 900px;
     background-color: white;
     box-shadow: 2;
-    margin: 5% 10%;
+    overflow: scroll;
     outline: none;
 }
 
@@ -277,8 +278,4 @@ body{
 .logout-modal{
     margin-top:15%;
     outline: none;
-}
-
-.contact-form-confirm {
-    height: auto !important;
 }

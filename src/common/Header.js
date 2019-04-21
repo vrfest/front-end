@@ -1,6 +1,6 @@
 import React from 'react';
 import '../constants/header.css';
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import icon from '../constants/images/icon-hamburger.png';
 import brand from '../constants/images/vrfest.png';
 import { Grid, Avatar } from '@material-ui/core';
@@ -54,7 +54,7 @@ export default class Header extends React.Component {
                     }
                     {
                         !getToken() &&
-                        <button className="navbar-btn"><a href="/login">Sign up / Login</a></button>
+                        <Link to='/login'><button className="navbar-btn">Sign up / Login</button></Link>
                     }
                         {/* <p><Link to="/login" style={{ textDecoration: 'none' }}>Login</Link> / <Link style={{ textDecoration: 'none' }} to="/signup">Signup</Link></p> */}
                     </div>
