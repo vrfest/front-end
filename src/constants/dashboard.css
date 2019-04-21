@@ -4,7 +4,9 @@
     justify-content: center;
     flex-direction: column;
   padding-top: 10px;
+  padding-bottom: 25px;
   background-color: #151515;
+  background-image: linear-gradient(to top, #1d1d1d, #1b1b1b, #191919, #171717, #151515);
   font-family: Montserrat;
 }
 

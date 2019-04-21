@@ -5,26 +5,26 @@
             "credits": 120,
             "email": "nattpotato@gmail.com",
             "password": "1234",
-            "avatar":"https://www.guidedogs.org/wp-content/uploads/2018/01/Mobile.jpg"
+            "avatar": "https://www.guidedogs.org/wp-content/uploads/2018/01/Mobile.jpg"
         },
         {
             "username": "ying",
             "credits": 10,
             "email": "yingyang@gmail.com",
             "password": "4321",
-            "avatar":"https://www.guidedogs.org/wp-content/uploads/2018/01/Mobile.jpg"
+            "avatar": "https://www.guidedogs.org/wp-content/uploads/2018/01/Mobile.jpg"
         },
         {
             "username": "vite",
             "credits": 340,
             "email": "notlonely@gmail.com",
             "password": "helloworld",
-            "avatar":"https://www.guidedogs.org/wp-content/uploads/2018/01/Mobile.jpg"
+            "avatar": "https://www.guidedogs.org/wp-content/uploads/2018/01/Mobile.jpg"
         }
     ],
     "artists": [
         {
-            "name": "Sickick",
+            "name": "Sickick 👑",
             "image": "https://i.imgur.com/Yq9kJpX.png",
             "date": "Nov. 19, 2019",
             "cost": "20",

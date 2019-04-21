@@ -1,4 +1,115 @@
 /* Payment */
 .payment {
+  /* border: 1px solid red; */
+  background-color: #151515;
+  background-image: linear-gradient(to right top, #1d1d1d, #1b1b1b, #191919, #171717, #151515);
+  /* height: 300px; */
+  font-family: Montserrat;
+}
 
+.payment-container {
+  /* border: 1px solid purple; */
+  width: 92%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.payment-h2 {
+  margin: 0;
+  padding: 40px 0;
+  color: white;
+  font-size: 42px;
+  font-weight: 500;
+}
+
+/* Card */
+.payment-card {
+  /* border: 1px solid yellow; */
+  font-family: Montserrat;
+  height: 200px;
+  margin: 0;
+  display: flex;
+
+}
+
+.payment-card-img {
+  /* border: 1px dashed yellow; */
+  height: 100%;
+  width: 200px;
+  margin: 0;
+  object-fit: cover;
+  background-color: #1b1b1b;
+}
+
+.payment-card-text {
+  /* border: 1px dashed yellow; */
+  width: 100%;
+  padding: 20px;
+}
+
+.payment-h3 {
+  margin: 0;
+  color: white;
+  font-weight: 100;
+  font-size: 40px;
+}
+
+.payment-h4 {
+  margin: 0;
+  color: white;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.payment-p {
+  color: #707070;
+  font-size: 12px;
+}
+
+/* Payment Cost */
+.payment-cost {
+  font-weight: 200;
+  font-size: 48px;
+  color: white;
+  width: 100%;
+  text-align: center;
+  border-top: 0.5px solid #4d4d4d;
+  border-bottom: 0.5px solid #4d4d4d;
+  margin: 40px 0;
+}
+
+/* Payment Space Section */
+.payment-space {
+  /* border: 1px solid red; */
+  height: 400px;
+  display: flex;
+  padding-bottom: 40px;
+}
+
+.payment-left {
+  border-right: 1px solid #4d4d4d;
+}
+
+.payment-left, .payment-right {
+  color: white;
+  flex: 1;
+  display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.payment-btn {
+  font-weight: 600;
+  font-size: 16px;
+  text-shadow: 0px 1px rgb(173, 173, 173);
+}
+
+.payment-balance {
+  width: 100%;
+  padding: 0 4%;
+  display: flex;
+    justify-content: space-between;
+  font-size: 32px;
+  margin-bottom: 35px;
 }
