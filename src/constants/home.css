@@ -10,8 +10,20 @@
   display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 
   font-family: Montserrat;
+}
+
+.home-main-button {
+  color: white;
+  height: 100%;
+  width: 100%;
+  padding: 50px 70px;
+}
+
+.home-splash button{
+  overflow: hidden;
 }
 
 .home-h1 {
@@ -39,7 +51,7 @@
 
 .home-card {
   font-family: Montserrat;
-  border: 1px solid #141414;
+  /* border: 1px solid #141414; */
   /* margin: 0 4%; */
   width: 92%;
   height: 200px;
