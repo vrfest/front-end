@@ -70,12 +70,8 @@ export default class HomePage extends React.Component {
                 </iframe> */}
 
                 <video className="home-splash" autoPlay muted>
-                    {/* <video> */}
                     <source src={video} type="video/mp4" />
                 </video>
-
-
-                {/* <iframe src="https://www.youtube.com/embed/W0LHTWG-UmQ?controls=0&showinfo=0&rel=0&autoplay=1&loop=1" frameborder="0" allowfullscreen></iframe> */}
 
                 <div className="home-content">
                     <h2 className="home-h2">Events</h2>
