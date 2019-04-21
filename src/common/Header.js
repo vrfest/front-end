@@ -2,6 +2,7 @@ import React from 'react';
 import '../constants/header.css';
 // import { Link } from "react-router-dom";
 import icon from '../constants/images/icon-hamburger.png';
+import brand from '../constants/images/vrfest.png';
 
 export default class Header extends React.Component {
     render() {
@@ -16,7 +17,8 @@ export default class Header extends React.Component {
                         <button className="navbar-btn"><a href="/login">Sign up / Login</a></button>
                         {/* <p><Link to="/login" style={{ textDecoration: 'none' }}>Login</Link> / <Link style={{ textDecoration: 'none' }} to="/signup">Signup</Link></p> */}
                     </div>
-                    <div className="brand">vrfest</div>
+                    {/* <div className="brand">vrfest</div> */}
+                    <img className="brand" src={brand} alt="VRFest Logo" />
                 </div>
             </div>
         )

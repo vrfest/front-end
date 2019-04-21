@@ -37,9 +37,11 @@
   font-weight: 200;
   letter-spacing: 0.2px;
   position: absolute;
-    right: calc(50% - 25px);
+    right: calc(50% - 50px);
   color: white;
   font-family: Montserrat;
+  height: 24px;
+  margin: 0;
 }
 
 .navbar-btn {
