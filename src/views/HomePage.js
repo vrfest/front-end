@@ -62,6 +62,7 @@ export default class HomePage extends React.Component {
 
                 <div className="home-splash">
                     <h1 className="home-h1">Amazing concerts anytime, anywhere.</h1>
+                    <button><a className="home-main-button" href="/signup">Sign Up</a></button>
                 </div>
 
                 <div className="home-content">

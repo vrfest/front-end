@@ -1,7 +1,7 @@
 import React from 'react';
 import '../constants/landing.css';
 import { FirebaseDatabaseMutation, FirebaseDatabaseNode } from '@react-firebase/database';
-import image from '../constants/images/vrlogo.png';
+import image from '../constants/images/logo.png';
 import { config }  from "../constants/config";
 
 // let firebase = require('firebase');
@@ -20,7 +20,7 @@ export default class LandingPage extends React.Component {
     }
 
     // componentDidMount(){
-        
+
     // }
 
     // test = () =>{
@@ -47,12 +47,12 @@ export default class LandingPage extends React.Component {
 
     countProperties = (obj) => {
         var count = 0;
-    
+
         for(var prop in obj) {
             if(obj.hasOwnProperty(prop))
                 ++count;
         }
-    
+
         return count;
     }
 
@@ -61,16 +61,7 @@ export default class LandingPage extends React.Component {
             <div className="landing">
                 <div className="landing-container">
                     <img className="form-logo" src={image} alt="Logo" />
-                    <h1 className="landing-h1">VRFEST</h1>
-                    <FirebaseDatabaseNode path={path}>
-                    {d => {
-                        return d.isLoading === true ? (
-                            "Loading"
-                        ) : (
-                            <h1 className="landing-h3">Users: {this.countProperties(d.value)}</h1>
-                        );
-                    }}
-                    </FirebaseDatabaseNode>
+                    <h2 className="landing-h2">Sign up now to get $10 off your first VR concert ticket.</h2>
                     <form className="landing-form">
                         <input className="landing-input" onChange={this.handleChange} type="text" placeholder="e.g first.last@gmail.com" />
                         <FirebaseDatabaseMutation type="push" path={path}>
@@ -90,8 +81,15 @@ export default class LandingPage extends React.Component {
                             }}
                         </FirebaseDatabaseMutation>
                     </form>
-                    <h2 className="landing-h2">VR festivals and concerts with your favorite artists</h2>
-                    <h2 className="landing-h2">Sign up to the waitlist for $10 off your first ticket</h2>
+                    <FirebaseDatabaseNode path={path}>
+                    {d => {
+                        return d.isLoading === true ? (
+                            "Loading"
+                        ) : (
+                            <h2 className="landing-h2"><span class="counter">{this.countProperties(d.value)}</span> people have saved $10 by signing up. <span class="join-now">Join them now!</span></h2>
+                        );
+                    }}
+                    </FirebaseDatabaseNode>
                 </div>
             </div>
         )

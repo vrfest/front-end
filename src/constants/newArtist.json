@@ -1,0 +1,32 @@
+{
+    "artists": [
+        {
+            "name": "Angel Olsen",
+            "image": "http://www.stickpng.com/assets/images/5bb36021554c7f08176ec0e4.png",
+            "date": "Nov. 19, 2019",
+            "cost": "20",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        {
+            "name": "Jay Z",
+            "image": "http://3.bp.blogspot.com/_wevkEt-i9rw/R0ZYMfL9WxI/AAAAAAAAACE/17RMa7P35es/s320/jay-z-4.png",
+            "date": "Nov. 19, 2019",
+            "cost": "15",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        {
+            "name": "Beyonce",
+            "image": "https://pmcvariety.files.wordpress.com/2017/09/beyonce.png",
+            "date": "Nov. 19, 2019",
+            "cost": "25",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        },
+        {
+            "name": "Eminem",
+            "image": "https://ui-ex.com/images/eminem-drawing-face-5.png",
+            "date": "Nov. 19, 2019",
+            "cost": "30",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        }
+    ]
+}
