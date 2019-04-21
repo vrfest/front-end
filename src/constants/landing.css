@@ -27,6 +27,10 @@
   border-radius: 20px;
 }
 
+.displayedTime{
+  margin-top: 15px;
+}
+
 .form-logo {
   margin: 0;
   margin-bottom: 20px;
