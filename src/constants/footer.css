@@ -36,16 +36,16 @@
 }
 
 .ft-h4 {
-  margin-bottom: 25px;
-  color: white;
+  margin-bottom: 20px;
+  color: rgb(216, 216, 216);
   font-size: 20px;
   margin-top: 0;
 }
 
 .ft-links {
-  color: white;
+  color: rgb(216, 216, 216);
   font-size: 14px;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .ft-links:hover {
