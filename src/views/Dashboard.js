@@ -8,7 +8,7 @@ import '../constants/dashboard.css';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 import card from '../constants/images/card.png';
-import { getToken } from '../utils/LocalCache';
+import { getToken, getTicket } from '../utils/LocalCache';
 
 export default class Dashboard extends React.Component {
     constructor(props) {
@@ -92,7 +92,7 @@ export default class Dashboard extends React.Component {
 
                             <div className="wallet-balance">
                                 <h3 className="wallet-balance-value">Balance</h3>
-                                <h3 className="wallet-balance-value">{getToken() && getToken().credits} VRT</h3>
+                                <h3 className="wallet-balance-value">{getToken() && getToken().creditsVRT} VRT</h3>
                             </div>
 
                         </div>
@@ -100,15 +100,15 @@ export default class Dashboard extends React.Component {
 
                     <h2 className="dashboard-h2">My tickets</h2>
                     <div className="dashboard-feature">
-                        <img className="dashboard-img" src="https://charts-static.billboard.com/img/2011/02/ariana-grande-ypy.jpg" alt=""/>
-                        <img className="dashboard-img" src="https://i.imgur.com/Yq9kJpX.png" alt=""/>
-                        <img className="dashboard-img" src="https://pbs.twimg.com/profile_images/1054790574086201345/hnnkdKJm_400x400.jpg" alt=""/>
+                        {/* <img className="dashboard-img" src="https://charts-static.billboard.com/img/2011/02/ariana-grande-ypy.jpg" alt=""/> */}
+                        { getTicket() && <img className="dashboard-img" src="https://i.imgur.com/Yq9kJpX.png" alt=""/>}
+                        {/* <img className="dashboard-img" src="https://pbs.twimg.com/profile_images/1054790574086201345/hnnkdKJm_400x400.jpg" alt=""/> */}
                     </div>
 
                     <div className="dashboard-feature-time">
-                        <p>Coming live in: <b>25 min 40 sec</b></p>
+                        {/* <p>Coming live in: <b>25 min 40 sec</b></p>
                         <button>Live Now</button>
-                        <p>Coming live in: <b>25 min 40 sec</b></p>
+                        <p>Coming live in: <b>25 min 40 sec</b></p> */}
                     </div>
 
                     <h2 className="dashboard-h2">Upcoming events</h2>

@@ -3,11 +3,20 @@ import '../constants/payment.css';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 import {Link} from 'react-router-dom';
+import { getToken, setToken, setTicket } from '../utils/LocalCache';
+
 
 export default class Payment extends React.Component {
     constructor(props) {
         super(props);
         this.state = {}
+    }
+
+    handleBuy = () => {
+        let user = getToken();
+        user.creditsVRT -= 100;
+        setTicket(user);
+        setToken(user);
     }
 
     render() {
@@ -44,14 +53,14 @@ export default class Payment extends React.Component {
                                         <input className="payment-input" type="text" placeholder="CVC" />
                                     </div>
                                 </form>
-                                <button className="payment-btn">Buy with Credit Card</button>
+                                <button className="payment-btn" onClick={this.handleBuy}>Buy with Credit Card</button>
                             </div>
                             <div className="payment-right">
                                 <div className="payment-balance">
                                     <p>Balance</p>
-                                    <p><b>300 VRT</b></p>
+                                    <p><b>{getToken().creditsVRT} VRT</b></p>
                                 </div>
-                                <Link to='/homepage'><button className="payment-btn">Buy with VRT</button></Link>
+                                <Link to='/homepage'><button onClick={this.handleBuy} className="payment-btn">Buy with VRT</button></Link>
                             </div>
                         </div>
                     </div>

@@ -2,7 +2,8 @@
     "users": [
         {
             "username": "artur-aslanyan",
-            "credits": 120,
+            "creditsVRT": 23000,
+            "creditsUSD": 20,
             "wallet":"15b768da67802179faf8db360cf3dc8fb0eab3f84c70e7",
             "email": "arthurdantes@yahoo.com",
             "password": "1234",
@@ -10,7 +11,8 @@
         },
         {
             "username": "ying",
-            "credits": 10,
+            "creditsVRT": 220,
+            "creditsUSD": 10,
             "wallet":"15b768da67802179faf8db360cf3dc8fb0eab3f84c70e7",
             "email": "yingyang@gmail.com",
             "password": "4321",
@@ -18,7 +20,8 @@
         },
         {
             "username": "vite",
-            "credits": 340,
+            "creditsVRT": 320,
+            "creditsUSD": 50,
             "wallet":"15b768da67802179faf8db360cf3dc8fb0eab3f84c70e7",
             "email": "notlonely@gmail.com",
             "password": "helloworld",
