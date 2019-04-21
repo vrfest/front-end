@@ -1,6 +1,6 @@
 import React from 'react';
-import { Grid } from '@material-ui/core';
-import SmallCard from '../components/SmallCard';
+// import { Grid } from '@material-ui/core';
+// import SmallCard from '../components/SmallCard';
 import { artists } from '../constants/initialState.json';
 
 import '../constants/dashboard.css';
@@ -37,7 +37,7 @@ export default class Dashboard extends React.Component {
                     <h2 className="dashboard-h2">My tickets</h2>
                     <div className="dashboard-feature">
                         <img className="dashboard-img" src="http://www.stickpng.com/assets/images/5bb36021554c7f08176ec0e4.png" />
-                        <img className="dashboard-img" src="http://www.stickpng.com/assets/images/5bb36021554c7f08176ec0e4.png" />
+                        <img className="dashboard-img" src="https://i.imgur.com/Yq9kJpX.png" />
                         <img className="dashboard-img" src="http://www.stickpng.com/assets/images/5bb36021554c7f08176ec0e4.png" />
                     </div>
 

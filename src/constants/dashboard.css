@@ -26,8 +26,9 @@
 
 .dashboard-feature img {
   height: 30%;
-  width: 30%;
+  width:  30%;
   object-fit: cover;
+  /* object-fit: contain; */
   background-color: #1b1b1b;
 }
 
