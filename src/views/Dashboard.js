@@ -80,6 +80,23 @@ export default class Dashboard extends React.Component {
                 <Header />
                 <div className="dashboard">
                     <h2 className="dashboard-h2">My Wallet</h2>
+                    <div className="dashboard-wallet">
+                        <div className="dashboard-card">
+
+                        </div>
+
+                        <div className="dashboard-wallet-text">
+                            <h4 className="wallet-address">Wallet Address:</h4>
+                            <h4 className="wallet-address-value">15b768da67802179faf8db360cf3dc8fb0eab3f84c70e7</h4>
+
+                            <div className="wallet-balance">
+                                <h3 className="wallet-balance-value">Balance</h3>
+                                <h3 className="wallet-balance-value">300 VRT</h3>
+                            </div>
+
+                        </div>
+                    </div>
+
 
                     <h2 className="dashboard-h2">My tickets</h2>
                     <div className="dashboard-feature">
