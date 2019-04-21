@@ -265,3 +265,19 @@ body{
 .modal-btn {
     margin-top: 20px;
 }
+
+.big-avatar{
+    margin: 10;
+    width: 60;
+    height: 60;
+}
+
+.logout-modal{
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 2;
+    top: 35%;
+    left: 38%
+  }

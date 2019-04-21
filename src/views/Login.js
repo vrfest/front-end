@@ -28,7 +28,7 @@ export default class LandingPage extends React.Component {
     async handleSubmit() {
         let checkU = await users.filter(user => user.email === this.state.email);        
         if(checkU[0].password === this.state.password){
-            setToken(checkU[0].name);
+            setToken(checkU[0]);
         }else{
             console.log("Fail");
         }

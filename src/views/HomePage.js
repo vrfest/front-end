@@ -9,6 +9,7 @@ import image from '../constants/images/samsung-gear.png';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 import '../constants/home.css';
+import { getToken } from '../utils/LocalCache';
 
 export default class HomePage extends React.Component {
     constructor(props) {
@@ -16,7 +17,12 @@ export default class HomePage extends React.Component {
         this.state = {
             open: false,
             current_artist: artists[0],
+            username: null,
         };
+    }
+
+    componentDidMount(){
+        this.setState({ username: getToken()});
     }
 
     renderArtist = () => {
