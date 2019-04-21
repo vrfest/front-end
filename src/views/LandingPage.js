@@ -1,5 +1,4 @@
 import React from 'react';
-// import { Grid, Paper, InputBase } from '@material-ui/core';
 import '../constants/landing.css';
 import { FirebaseDatabaseMutation, FirebaseDatabaseNode } from '@react-firebase/database';
 import image from '../constants/images/vrlogo.png';
@@ -12,11 +11,15 @@ const path = "user_emails";
 // const UCRef = firebaseApp.database().ref(path)
 
 export default class LandingPage extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
+<<<<<<< HEAD
             email : null,
             users: null,
+=======
+            email: null,
+>>>>>>> ccde3ee005d5f8b5078a88c35b527b10c284f9ba
         }
         // this.test();
     }
@@ -44,7 +47,7 @@ export default class LandingPage extends React.Component {
     // }
 
     handleChange = (event) => {
-        this.setState({email: event.target.value});
+        this.setState({ email: event.target.value });
     }
 
     countProperties = (obj) => {
@@ -78,16 +81,16 @@ export default class LandingPage extends React.Component {
                         <FirebaseDatabaseMutation type="push" path={path}>
                             {({ runMutation }) => {
                                 return (
-                                <div>
-                                    <button className="landing-button"
-                                    data-testid="test-push"
-                                    onClick={async () => {
-                                        const { key } = await runMutation({ email : this.state.email });
-                                    }}
-                                    >
-                                    Sign up
+                                    <div>
+                                        <button className="landing-button"
+                                            data-testid="test-push"
+                                            onClick={async () => {
+                                                const { key } = await runMutation({ email: this.state.email });
+                                            }}
+                                        >
+                                            Sign up
                                     </button>
-                                </div>
+                                    </div>
                                 );
                             }}
                         </FirebaseDatabaseMutation>
