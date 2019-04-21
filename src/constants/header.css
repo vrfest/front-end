@@ -39,6 +39,7 @@
   position: absolute;
     right: calc(50% - 25px);
   color: white;
+  font-family: Montserrat;
 }
 
 .navbar-btn {

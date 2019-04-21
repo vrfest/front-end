@@ -1,6 +1,6 @@
 import React from 'react';
 import '../constants/header.css';
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import icon from '../constants/images/icon-hamburger.png';
 
 export default class Header extends React.Component {
@@ -9,7 +9,6 @@ export default class Header extends React.Component {
             <div className="navbar">
                 <div className="navbar-main">
                     <div className="navbar-left">
-                        {/* <p>☰</p> */}
                         <img className="navbar-menu" src={icon} alt="Menu Icon" />
                     </div>
 
