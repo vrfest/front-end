@@ -176,7 +176,7 @@ body{
     align-items: center;
     display: flex;
     padding: 20px;
-}  
+}
 
 .landing-bottom{
     height: 200px;
@@ -190,13 +190,76 @@ body{
     box-shadow: 2;
     margin: 5% 10%;
     outline: none;
-  }
+}
 
+/* Modal Style in Homepage */
 .modal-style {
-    position: absolute;
+    position: relative;
     top: 10%;
-    left:10%;
+    /* right:50%; */
     overflow:scroll;
     height:100%;
-    display:block
+    /* display:block, */
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    /* overflow-y: hidden; */
+    /* width: 80; */
+    /* padding: 0 40px; */
+}
+
+/* Modal Code */
+.modal-card {
+    /* border: 1px solid red; */
+    height: 200px;
+    width: 100%;
+    padding: 0 40px;
+    display: flex;
+    font-family: Montserrat;
+    margin-bottom: 35px;
+}
+
+.modal-img {
+    object-fit: cover;
+    height: 100%;
+    margin: 0;
+    width: 200px;
+    margin-right: 40px;
+    background-color: #f1f1f1;
+}
+
+.modal-h1 {
+    font-weight: 200;
+    margin: 10px 0 0 0;
+}
+
+.modal-h2 {
+    font-size: 18px;
+}
+
+.modal-p {
+    font-size: 11px;
+    margin: 0;
+}
+
+.modal-flex {
+    display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.modal-tracks {
+    /* border: 1px dashed red; */
+    width: 100%;
+    padding: 0 40px;
+}
+
+.modal-li {
+    margin-bottom: 10px;
+}
+
+.modal-btn {
+    margin-top: 20px;
 }
