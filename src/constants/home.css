@@ -54,6 +54,7 @@
   height: 100%;
   width: 200px;
   margin: 0;
+  object-fit: cover;
 }
 
 .home-h3 {
