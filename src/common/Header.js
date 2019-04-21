@@ -3,10 +3,9 @@ import '../constants/header.css';
 // import { Link } from "react-router-dom";
 import icon from '../constants/images/icon-hamburger.png';
 import brand from '../constants/images/vrfest.png';
-import { getToken } from '../utils/LocalCache';
 import { Grid, Avatar } from '@material-ui/core';
-import { Button, Typography, Paper, TextField, Modal } from '@material-ui/core';
-import { clearToken } from '../utils/LocalCache';
+import { Button, Typography, Paper, Modal } from '@material-ui/core';
+import { clearToken, getToken } from '../utils/LocalCache';
 
 export default class Header extends React.Component {
     state = {

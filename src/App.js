@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import RouteHandler from './RouterHandler';
-import Header from './common/Header';
-import Footer from './common/Footer';
+// import Header from './common/Header';
+// import Footer from './common/Footer';
 import { FirebaseDatabaseProvider } from "@react-firebase/database";
 import * as firebase from "firebase/app";
 import "firebase/database";

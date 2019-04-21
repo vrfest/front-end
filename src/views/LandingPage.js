@@ -1,16 +1,12 @@
 import React from 'react';
 import '../constants/landing.css';
 import { FirebaseDatabaseMutation, FirebaseDatabaseNode } from '@react-firebase/database';
-import image from '../constants/images/logo.png';
+// import image from '../constants/images/logo.png';
 import logo from '../constants/images/landing-logo.png';
-import { config } from "../constants/config";
 import Clock from "./Clock";
 
-// let firebase = require('firebase');
-// let firebaseApp = firebase.initializeApp(config);
 
 const path = "user_emails";
-// const UCRef = firebaseApp.database().ref(path)
 
 export default class LandingPage extends React.Component {
     constructor(props) {
@@ -23,27 +19,6 @@ export default class LandingPage extends React.Component {
         this.handleStart()
     }
 
-    // componentDidMount(){
-
-    // }
-
-    // test = () =>{
-    //     UCRef.on('value', snapshot => {
-    //         let items = snapshot.val();
-    //         console.log(items);
-    //         let newState = [];
-    //         for (let item in items) {
-    //             newState.push({
-    //                 id: item,
-    //                 email: items[item].email,
-    //             });
-    //         }
-    //         this.setState({
-    //             users: newState
-    //         });
-    //         // console.log(this.state.users);
-    //     });
-    // }
 
     handleChange = (event) => {
         this.setState({ email: event.target.value });
@@ -86,7 +61,7 @@ export default class LandingPage extends React.Component {
                                         <button className="landing-button"
                                             data-testid="test-push"
                                             onClick={async () => {
-                                                const { key } = await runMutation({ email: this.state.email });
+                                                await runMutation({ email: this.state.email });
                                             }}
                                         >
                                             Sign up

@@ -109,3 +109,9 @@
   color: white;
   text-transform: uppercase;
 }
+
+.donate-button{
+  width: 170px;
+  margin-top: 36px;
+  background: linear-gradient(79deg, rgb(250,21,74), rgb(199,0,161));
+}

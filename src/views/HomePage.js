@@ -1,10 +1,7 @@
 import React from 'react';
-// import { Grid, Paper, List, IconButton, InputBase } from '@material-ui/core';
-import SmallCard from '../components/SmallCard';
-// import FrontSlide from './FrontSlide';
 import { artists } from '../constants/initialState.json';
-import { Button, Typography, Grid, Paper, TextField, Modal } from '@material-ui/core';
-import image from '../constants/images/samsung-gear.png';
+import { Grid, Paper, Modal } from '@material-ui/core';
+// import image from '../constants/images/samsung-gear.png';
 
 import Header from '../common/Header';
 import Footer from '../common/Footer';
@@ -29,7 +26,7 @@ export default class HomePage extends React.Component {
         return artists.map((artist) => {
             return (
                 <div className="home-card">
-                    <img className="home-card-img" src={artist.image} />
+                    <img className="home-card-img" src={artist.image} alt=""/>
 
                     <div className="home-card-text">
                         <h3 className="home-h3">{artist.name}</h3>
@@ -38,7 +35,7 @@ export default class HomePage extends React.Component {
                     </div>
 
                     <div className="home-card-button">
-                        <h3 className="home-h3">{artist.cost + '$'}</h3>
+                        <h3 className="home-h3" style={{marginLeft: 90}}>{artist.cost + '$'}</h3>
                         <button className="home-button" onClick={() => this.handleOpen(artist)}>Buy Now</button>
                     </div>
                 </div>
@@ -89,7 +86,7 @@ export default class HomePage extends React.Component {
                             <Grid alignItems="center" justify="space-evenly" container direction='column' style={{ marginTop: 50 }}>
                                 {/* Card Section */}
                                 <div className="modal-card">
-                                    <img className="modal-img" src={current_artist.image} />
+                                    <img className="modal-img" src={current_artist.image} alt="" />
                                     <div className="modal-text">
                                         <div className="modal-flex">
                                             <h1 className="modal-h1">{current_artist.name} <b>(VR)</b></h1>
@@ -102,24 +99,13 @@ export default class HomePage extends React.Component {
 
                                 <div className="modal-tracks">
                                     <h3>Tracks</h3>
-
-                                    <div className="modal-li">
-                                        <p> • Fire and Rayn</p>
-                                        <p>0:00</p>
-                                    </div>
-                                    <div className="modal-li">
-                                        <p> • Gomd</p>
-                                        <p>0:00</p>
-                                    </div>
-                                    <div className="modal-li">
-                                        <p> • Mind Games</p>
-                                        <p>0:00</p>
-                                    </div>
-                                    <div className="modal-li">
-                                        <p> • Faded </p>
-                                        <p>0:00</p>
-                                    </div>
-
+                                    {current_artist.tracks.map(track => (
+                                        <div className="modal-li">
+                                            <p> • {track.name}</p>
+                                            <p>{track.time}</p>
+                                        </div>
+                                    ))
+                                    }
                                 </div>
 
                                 <button className="modal-btn">

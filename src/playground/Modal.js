@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button, Typography, Grid, Paper, TextField, Modal 
+import { Button, Grid, Paper, Modal 
 } 
 from '@material-ui/core';
 

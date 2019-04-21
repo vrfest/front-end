@@ -19,7 +19,7 @@ export default class Payment extends React.Component {
 
                         {/* Card */}
                         <div className="payment-card">
-                            <img className="payment-card-img" src="https://i.imgur.com/Yq9kJpX.png" />
+                            <img className="payment-card-img" src="https://i.imgur.com/Yq9kJpX.png" alt=""/>
 
                             <div className="payment-card-text">
                                 <h3 className="payment-h3">Sickick</h3>

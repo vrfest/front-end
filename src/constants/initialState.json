@@ -3,6 +3,7 @@
         {
             "username": "natt",
             "credits": 120,
+            "wallet":"15b768da67802179faf8db360cf3dc8fb0eab3f84c70e7",
             "email": "nattpotato@gmail.com",
             "password": "1234",
             "avatar": "https://www.guidedogs.org/wp-content/uploads/2018/01/Mobile.jpg"
@@ -10,6 +11,7 @@
         {
             "username": "ying",
             "credits": 10,
+            "wallet":"15b768da67802179faf8db360cf3dc8fb0eab3f84c70e7",
             "email": "yingyang@gmail.com",
             "password": "4321",
             "avatar": "https://www.guidedogs.org/wp-content/uploads/2018/01/Mobile.jpg"
@@ -17,6 +19,7 @@
         {
             "username": "vite",
             "credits": 340,
+            "wallet":"15b768da67802179faf8db360cf3dc8fb0eab3f84c70e7",
             "email": "notlonely@gmail.com",
             "password": "helloworld",
             "avatar": "https://www.guidedogs.org/wp-content/uploads/2018/01/Mobile.jpg"
@@ -31,28 +34,28 @@
             "content": "Sickick (born 1988-10-25) is a Canadian EDM artist, producer and vocalist who mixes R&B vocals with dark tones. He worked behind the scenes as a producer and writer for several mainstream artists. He uploads remixes of top artists' songs to his YouTube channel. His remix of iLoveMakonnen @Tuesday ft. Drake accumulated more than 1.25 million views in just seven months. The Sickick team also includes manager and creative partner Rayn Magic. Both have recently partnered with Much Digital Studios to bring their content to the forefront of the entertainment scene.",
             "tracks": [
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "Fire and Rayn",
+                    "time": "03:38"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "Gomd",
+                    "time": "02:10"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "Mind Games",
+                    "time": "04:19"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "Faded ",
+                    "time": "03:05"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "Infected",
+                    "time": "03:23"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "Lost My Way",
+                    "time": "03:56"
                 }
             ]
         },
@@ -64,28 +67,28 @@
             "content": "Ariana Grande-Butera is an American singer, songwriter and actress. As one of the world's leading contemporary recording artists, she is known for her wide vocal range and has received such accolades including one Grammy Award, one Brit Award and three American Music Awards. Ariana Grande-Butera is an American singer, songwriter and actress. As one of the world's leading contemporary recording artists, she is known for her wide vocal range and has received such accolades including one Grammy Award, one Brit Award and three American Music Awards.",
             "tracks": [
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "7 Rings",
+                    "time": "03:04"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "Bang Bang",
+                    "time": "04:22"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "One Last Time",
+                    "time": "03:22"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "No Tear Left to Cry",
+                    "time": "03:58"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "Break Free",
+                    "time": "03:27"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "The Way",
+                    "time": "03:51"
                 }
             ]
         },
@@ -97,28 +100,28 @@
             "content": "Belcalis Marlenis Almánzar, known professionally as Cardi B, is an American rapper, songwriter, and television personality. Born and raised in The Bronx, New York City, she became an internet celebrity after several of her posts and videos went viral on Vine and Instagram. Cardi B has since earned three number-one singles on the Billboard Hot 100, the most of any female rapper; Bodak Yellow made her the second female rapper to top the chart with a solo output.",
             "tracks": [
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "Halo",
+                    "time": "03:44"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "Drink in Love",
+                    "time": "06:21"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "Hold Up",
+                    "time": "05:16"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "Naughty Girl",
+                    "time": "03:28"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "Deja Vu",
+                    "time": "04:01"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "Formation",
+                    "time": "03:18"
                 }
             ]
         },
@@ -130,28 +133,142 @@
             "content": "Robyn Rihanna Fenty is a Barbadian singer, businesswoman and actress. Born in Saint Michael and raised in Bridgetown, Rihanna was discovered by American record producer Evan Rogers in her home country in 2003. Throughout 2004, she recorded demo tapes under the direction of Rogers; this led to her securing a recording contract with Def Jam Recordings after she auditioned for its then-president, Jay-Z. Rihanna rose to fame with the release of her debut studio album Music of the Sun (2005) and its follow-up A Girl like Me (2006)..",
             "tracks": [
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "Diamonds",
+                    "time": "04:42"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "Work",
+                    "time": "07:34"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "Stay",
+                    "time": "04:07"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "Needed Me",
+                    "time": "03:14"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "Only Girl",
+                    "time": "04:10"
                 },
                 {
-                    "name": "I want to ... you ",
-                    "time": "00:00"
+                    "name": "What's My Name?",
+                    "time": "04:23"
+                }
+            ]
+        }
+    ],
+    "newArtists": [
+        {
+            "name": "Grace VanderWaal",
+            "image": "https://imgix.ranker.com/user_node_img/4269/85372094/original/grace-vanderwaal-photo-u5?w=280&h=280&fit=crop&crop=faces&q=50&fm=pjpg",
+            "date": "Nov. 19, 2019",
+            "cost": "20",
+            "content": "Grace Avery VanderWaal (born January 15, 2004) is an American singer-songwriter from Suffern, NY. At age 12, she won the 11th season of the NBC competition show America's Got Talent, singing her original songs and usually accompanying herself on the ukulele. Known for her distinctive vocals, she launched her first full-length album.",
+            "tracks": [
+                {
+                    "name": "I Don't Know My Name",
+                    "time": "02:27"
+                },
+                {
+                    "name": "Hideaway",
+                    "time": "03:16"
+                },
+                {
+                    "name": "Just A Crush",
+                    "time": "03:47"
+                },
+                {
+                    "name": "Clay",
+                    "time": "03:37"
+                },
+                {
+                    "name": "Talk Good",
+                    "time": "03:02"
+                },
+                {
+                    "name": "Beautiful Thing",
+                    "time": "03:46"
+                }
+            ]
+        },
+        {
+            "name": "Courtney Hadwin",
+            "image": "https://imgix.ranker.com/user_node_img/4269/85376841/original/courtney-hadwin-u1?w=280&h=280&fit=crop&crop=faces&q=50&fm=pjpg",
+            "date": "Nov. 19, 2019",
+            "cost": "15",
+            "content": "Courtney Ann Hadwin (born 6 July 2004) is a British singer-songwriter, best known for competing on the ITV's The Voice Kids UK 2017 and the thirteenth season of the NBC competition show America's Got Talent. In December 2018, Hadwin signed a record deal with Syco Entertainment and Arista Records.[21] Her first album is expected in 2019. She has been described as an exceptional talent with a voice and spirit well beyond her years.",
+            "tracks": [
+                {
+                    "name": "Pretty Little Thing",
+                    "time": "04:00"
+                }
+            ]
+        },
+        {
+            "name": "Juice WRLD",
+            "image": "https://imgix.ranker.com/user_node_img/4269/85375015/original/juice-wrld-photo-u1?w=280&h=280&fit=crop&crop=faces&q=50&fm=pjpg",
+            "date": "Nov. 19, 2019",
+            "cost": "25",
+            "content": "Jarad Higgins, known professionally as Juice WRLD, is an American rapper, singer, and songwriter from Calumet Park, Illinois. He is primarily known for his breakout hits, All Girls Are the Same and Lucid Dreams. His music has been described as emo-leaning and genre-bending. Jared Higgins was born on December 2, 1998 in Chicago and grew up in Calumet Park, one of its suburbs. He later moved to Homewood, Illinois and attended Homewood-Flossmoor High School.",
+            "tracks": [
+                {
+                    "name": "Lucid Dreams",
+                    "time": "03:50"
+                },
+                {
+                    "name": "Hear Me Calling",
+                    "time": "03:32"
+                },
+                {
+                    "name": "Fast",
+                    "time": "03:28"
+                },
+                {
+                    "name": "Fine China",
+                    "time": "02:23"
+                },
+                {
+                    "name": "Hide",
+                    "time": "03:27"
+                },
+                {
+                    "name": "Feeling",
+                    "time": "03:21"
+                }
+            ]
+        },
+        {
+            "name": "Ella Mai",
+            "image": "https://imgix.ranker.com/user_node_img/4269/85375912/original/ella-mai-u1?w=280&h=280&fit=crop&crop=faces&q=50&fm=pjpg",
+            "date": "Nov. 19, 2019",
+            "cost": "30",
+            "content": "Ella Mai Howell (born November 3, 1994) is an English singer and songwriter. She signed to DJ Mustard's label 10 Summers Records in 2014. Her EP's include Time, Change, and Ready. Her self-titled debut studio album was released in October 2018 and featured the singles Boo'd Up and Trip, which were released on February 20, 2018 and August 3, 2018, respectively.",
+            "tracks": [
+                {
+                    "name": "Trip",
+                    "time": "04:04"
+                },
+                {
+                    "name": "Naked",
+                    "time": "03:17"
+                },
+                {
+                    "name": "Close",
+                    "time": "04:11"
+                },
+                {
+                    "name": "Boo'd Up",
+                    "time": "04:01"
+                },
+                {
+                    "name": "A Thousand Times",
+                    "time": "04:51"
+                },
+                {
+                    "name": "Shot Clock",
+                    "time": "03:08"
                 }
             ]
         }

@@ -1,14 +1,14 @@
 import React from 'react';
 // import { Grid } from '@material-ui/core';
 // import SmallCard from '../components/SmallCard';
-import { artists } from '../constants/initialState.json';
-import { newArtists } from '../constants/newArtist.json';
-import { Button, Typography, Grid, Paper, TextField, Modal } from '@material-ui/core';
+import { artists, newArtists } from '../constants/initialState.json';
+import { Grid, Paper, Modal } from '@material-ui/core';
 
 import '../constants/dashboard.css';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 import card from '../constants/images/card.png';
+import { getToken } from '../utils/LocalCache';
 
 export default class Dashboard extends React.Component {
     constructor(props) {
@@ -23,7 +23,7 @@ export default class Dashboard extends React.Component {
         return artists.map((artist) => {
             return (
                 <div className="home-card">
-                    <img className="home-card-img" src={artist.image} />
+                    <img className="home-card-img" src={artist.image} alt=""/>
 
                     <div className="home-card-text">
                         <h3 className="home-h3">{artist.name}</h3>
@@ -32,7 +32,7 @@ export default class Dashboard extends React.Component {
                     </div>
 
                     <div className="home-card-button">
-                        <h3 className="home-h3">{artist.cost + '$'}</h3>
+                        <h3 className="home-h3" style={{marginLeft: 90}}>{artist.cost + '$'}</h3>
                         <button className="home-button" onClick={() => this.handleOpen(artist)}>Buy Now</button>
                     </div>
                 </div>
@@ -44,7 +44,7 @@ export default class Dashboard extends React.Component {
         return newArtists.map((newArtists) => {
             return (
                 <div className="home-card">
-                    <img className="home-card-img" src={newArtists.image} />
+                    <img className="home-card-img" src={newArtists.image} alt=""/>
 
                     <div className="home-card-text">
                         <h3 className="home-h3">{newArtists.name}</h3>
@@ -53,8 +53,8 @@ export default class Dashboard extends React.Component {
                     </div>
 
                     <div className="home-card-button">
-                        <h3 className="home-h3">{newArtists.cost + '$'}</h3>
-                        <button className="home-button" onClick={() => this.handleOpen(newArtists)}>Buy Now</button>
+                        <button className="donate-button" onClick={() => this.handleOpen(newArtists)}>Donate</button>
+                        <button className="home-button" style={{marginTop:5}} onClick={() => this.handleOpen(newArtists)}>Watch</button>
                     </div>
                 </div>
             );
@@ -88,11 +88,11 @@ export default class Dashboard extends React.Component {
 
                         <div className="dashboard-wallet-text">
                             <h4 className="wallet-address">Wallet Address:</h4>
-                            <h4 className="wallet-address-value">15b768da67802179faf8db360cf3dc8fb0eab3f84c70e7</h4>
+                            <h4 className="wallet-address-value">{getToken().wallet}</h4>
 
                             <div className="wallet-balance">
                                 <h3 className="wallet-balance-value">Balance</h3>
-                                <h3 className="wallet-balance-value">300 VRT</h3>
+                                <h3 className="wallet-balance-value">{getToken().credits} VRT</h3>
                             </div>
 
                         </div>
@@ -100,9 +100,9 @@ export default class Dashboard extends React.Component {
 
                     <h2 className="dashboard-h2">My tickets</h2>
                     <div className="dashboard-feature">
-                        <img className="dashboard-img" src="https://charts-static.billboard.com/img/2011/02/ariana-grande-ypy.jpg" />
-                        <img className="dashboard-img" src="https://i.imgur.com/Yq9kJpX.png" />
-                        <img className="dashboard-img" src="https://pbs.twimg.com/profile_images/1054790574086201345/hnnkdKJm_400x400.jpg" />
+                        <img className="dashboard-img" src="https://charts-static.billboard.com/img/2011/02/ariana-grande-ypy.jpg" alt=""/>
+                        <img className="dashboard-img" src="https://i.imgur.com/Yq9kJpX.png" alt=""/>
+                        <img className="dashboard-img" src="https://pbs.twimg.com/profile_images/1054790574086201345/hnnkdKJm_400x400.jpg" alt=""/>
                     </div>
 
                     <div className="dashboard-feature-time">
@@ -129,7 +129,7 @@ export default class Dashboard extends React.Component {
                         {current_artist &&
                             <Grid alignItems="center" justify="space-evenly" container direction='column' style={{ marginTop: 50 }}>
                                 <div className="modal-card">
-                                    <img className="modal-img" src={current_artist.image} />
+                                    <img className="modal-img" src={current_artist.image} alt=""/>
                                     <div className="modal-text">
                                         <div className="modal-flex">
                                             <h1 className="modal-h1">{current_artist.name} <b>(VR)</b></h1>
@@ -142,24 +142,13 @@ export default class Dashboard extends React.Component {
 
                                 <div className="modal-tracks">
                                     <h3>Tracks</h3>
-
-                                    <div className="modal-li">
-                                        <p> • Fire and Rayn</p>
-                                        <p>0:00</p>
-                                    </div>
-                                    <div className="modal-li">
-                                        <p> • Gomd</p>
-                                        <p>0:00</p>
-                                    </div>
-                                    <div className="modal-li">
-                                        <p> • Mind Games</p>
-                                        <p>0:00</p>
-                                    </div>
-                                    <div className="modal-li">
-                                        <p> • Faded </p>
-                                        <p>0:00</p>
-                                    </div>
-
+                                    {current_artist.tracks.map(track => (
+                                        <div className="modal-li">
+                                            <p> • {track.name}</p>
+                                            <p>{track.time}</p>
+                                        </div>
+                                    ))
+                                    }
                                 </div>
 
                                 <button className="modal-btn">
