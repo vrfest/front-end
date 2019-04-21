@@ -1,35 +1,78 @@
 import React from 'react';
 // import { Grid, Paper, InputBase } from '@material-ui/core';
 import '../constants/landing.css';
-import { FirebaseDatabaseMutation } from '@react-firebase/database';
+import { FirebaseDatabaseMutation, FirebaseDatabaseNode } from '@react-firebase/database';
 import image from '../constants/images/vrlogo.png';
-import wordLogo from '../constants/images/vrfest.png';
+import { config }  from "../constants/config";
+
+// let firebase = require('firebase');
+// let firebaseApp = firebase.initializeApp(config);
 
 const path = "user_emails";
+// const UCRef = firebaseApp.database().ref(path)
 
 export default class LandingPage extends React.Component {
     constructor(props){
         super(props);
         this.state = {
             email : null,
+            users: null,
         }
+        // this.test();
     }
+
+    // componentDidMount(){
+        
+    // }
+
+    // test = () =>{
+    //     UCRef.on('value', snapshot => {
+    //         let items = snapshot.val();
+    //         console.log(items);
+    //         let newState = [];
+    //         for (let item in items) {
+    //             newState.push({
+    //                 id: item,
+    //                 email: items[item].email,
+    //             });
+    //         }
+    //         this.setState({
+    //             users: newState
+    //         });
+    //         // console.log(this.state.users);
+    //     });
+    // }
 
     handleChange = (event) => {
         this.setState({email: event.target.value});
+    }
+
+    countProperties = (obj) => {
+        var count = 0;
+    
+        for(var prop in obj) {
+            if(obj.hasOwnProperty(prop))
+                ++count;
+        }
+    
+        return count;
     }
 
     render() {
         return (
             <div className="landing">
                 <div className="landing-container">
-
                     <img className="form-logo" src={image} alt="Logo" />
-                    <img className="form-word-logo" src={wordLogo} alt="VRFest" />
-
-                    <h2 className="landing-h2">VR festivals and concerts with your favorite artists.</h2>
-                    <h2 className="landing-h2">Sign up to the waitlist for $10 off your first ticket.</h2>
-
+                    <h1 className="landing-h1">VRFEST</h1>
+                    <FirebaseDatabaseNode path={path}>
+                    {d => {
+                        return d.isLoading === true ? (
+                            "Loading"
+                        ) : (
+                            <h1 className="landing-h3">Users: {this.countProperties(d.value)}</h1>
+                        );
+                    }}
+                    </FirebaseDatabaseNode>
                     <form className="landing-form">
                         <input className="landing-input" onChange={this.handleChange} type="text" placeholder="e.g first.last@gmail.com" />
                         <FirebaseDatabaseMutation type="push" path={path}>
@@ -49,22 +92,9 @@ export default class LandingPage extends React.Component {
                             }}
                         </FirebaseDatabaseMutation>
                     </form>
-
+                    <h2 className="landing-h2">VR festivals and concerts with your favorite artists</h2>
+                    <h2 className="landing-h2">Sign up to the waitlist for $10 off your first ticket</h2>
                 </div>
-                {/* <Grid container direction="column" alignItems="center">
-                    <h3 className="banner-title"> VRFest </h3>
-                    <h6 style={{ marginTop: '2%' }}>VR festivals and concerts with your favourite artists.</h6>
-                    <h6> Sign up to the waitlist for $10 off your first ticket.</h6>
-                    <Paper className="home-paper-search">
-                        <InputBase className="home-input" placeholder="Enter your email here" />
-                        <Paper className="home-input-paper" square={true} onClick={() => console.log("click")}>
-                            <h6 className="home-header" style={{ marginTop: 10 }}>Submit</h6>
-                        </Paper>
-                    </Paper>
-                </Grid>
-                <div className="landing-bottom">
-
-                </div> */}
             </div>
         )
     }
