@@ -41,7 +41,7 @@ export default class Header extends React.Component {
             <div className="navbar">
                 <div className="navbar-main">
                     <div className="navbar-left">
-                        <img className="navbar-menu" src={icon} alt="Menu Icon" />
+                        <Link to='/homepage'><img className="navbar-menu" src={icon} alt="Menu Icon" /></Link>
                     </div>
 
                     <div className="navbar-right">
@@ -54,7 +54,7 @@ export default class Header extends React.Component {
                     }
                     {
                         !getToken() &&
-                        <Link to='/login'><button className="navbar-btn">Sign up / Login</button></Link>
+                        <Link to='/login'><button className="navbar-btn"><h2>Sign up / Login</h2></button></Link>
                     }
                         {/* <p><Link to="/login" style={{ textDecoration: 'none' }}>Login</Link> / <Link style={{ textDecoration: 'none' }} to="/signup">Signup</Link></p> */}
                     </div>
