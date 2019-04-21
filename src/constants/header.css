@@ -52,10 +52,26 @@
   background-image: none;
   color: black;
   height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .navbar-btn a {
   color: black;
+}
+
+.navbar-btn h2 {
+  margin: 0;
+}
+
+.navbar-right a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 35px;
 }
 
 @media screen and (max-width: 650px) {
