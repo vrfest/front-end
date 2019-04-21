@@ -196,18 +196,14 @@ body{
 .modal-style {
     position: relative;
     top: 10%;
-    /* right:50%; */
-    overflow:scroll;
+    /* overflow:scroll; */
     height:100%;
-    /* display:block, */
     display: flex;
-    margin-top: 30px;
+    padding-top: 100px;
     justify-content: center;
     align-items: center;
     border-radius: 50px;
-    /* overflow-y: hidden; */
-    /* width: 80; */
-    /* padding: 0 40px; */
+    overflow-x: hidden;
 }
 
 /* Modal Code */
@@ -273,6 +269,6 @@ body{
 }
 
 .logout-modal{
-    margin-top:15%;  
+    margin-top:15%;
     outline: none;
 }
