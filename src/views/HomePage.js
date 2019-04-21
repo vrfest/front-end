@@ -2,6 +2,7 @@ import React from 'react';
 import { artists } from '../constants/initialState.json';
 import { Grid, Paper, Modal } from '@material-ui/core';
 // import image from '../constants/images/samsung-gear.png';
+import video from '../constants/videos/splash.mp4';
 
 import Header from '../common/Header';
 import Footer from '../common/Footer';
@@ -26,7 +27,7 @@ export default class HomePage extends React.Component {
         return artists.map((artist) => {
             return (
                 <div key={artist.name} className="home-card">
-                    <img className="home-card-img" src={artist.image} alt=""/>
+                    <img className="home-card-img" src={artist.image} alt="" />
 
                     <div className="home-card-text">
                         <h3 className="home-h3">{artist.name}</h3>
@@ -35,7 +36,7 @@ export default class HomePage extends React.Component {
                     </div>
 
                     <div className="home-card-button">
-                        <h3 className="home-h3" style={{marginLeft: 90}}>{artist.cost + '$'}</h3>
+                        <h3 className="home-h3" style={{ marginLeft: 90 }}>{artist.cost + '$'}</h3>
                         <button className="home-button" onClick={() => this.handleOpen(artist)}>Buy Now</button>
                     </div>
                 </div>
@@ -63,11 +64,14 @@ export default class HomePage extends React.Component {
             <div>
                 <Header />
 
-                <div className="home-splash">
-                    {/* <img className="home-gear" src={image} alt="Gear VR" /> */}
+                {/* <iframe className="home-splash" src="https://www.youtube.com/embed/nMt00eqovlU?controls=0&showinfo=0&rel=0&autoplay=1&loop=1" frameborder="0" allowfullscreen allow="autoplay">
                     <h1 className="home-h1">Amazing concerts anytime, anywhere.</h1>
                     <button><a className="home-main-button" href="/signup">Sign Up</a></button>
-                </div>
+                </iframe> */}
+
+                <video className="home-splash" autoPlay muted>
+                    <source src={video} type="video/mp4" />
+                </video>
 
                 <div className="home-content">
                     <h2 className="home-h2">Events</h2>
@@ -99,7 +103,7 @@ export default class HomePage extends React.Component {
 
                                 <div className="modal-tracks">
                                     <h3>Tracks</h3>
-                                    {current_artist.tracks.map((track,index) => (
+                                    {current_artist.tracks.map((track, index) => (
                                         <div key={index} className="modal-li">
                                             <p> • {track.name}</p>
                                             <p>{track.time}</p>
