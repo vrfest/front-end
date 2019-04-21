@@ -257,6 +257,15 @@ body{
 .modal-btn {
     margin-top: 20px;
     margin-bottom: 40px;
+    overflow: hidden;
+}
+
+.modal-btn a {
+    color: white;
+    height: 50px;
+    width: 200px;
+    padding: 12px 66px;
+
 }
 
 .big-avatar{
