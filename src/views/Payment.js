@@ -34,7 +34,15 @@ export default class Payment extends React.Component {
 
                         <div className="payment-space">
                             <div className="payment-left">
-                                <p>Left</p>
+                                {/* TODO: Fix the form (the submit button is outside the form tag) */}
+                                <form className="payment-form">
+                                    <input className="payment-input" type="text" placeholder="Full Name" />
+                                    <input className="payment-input" type="text" placeholder="XXXX-XXXX-XXXX-XXXX" />
+                                    <div className="payment-row">
+                                        <input className="payment-input" type="text" placeholder="MM/YY" />
+                                        <input className="payment-input" type="text" placeholder="CVC" />
+                                    </div>
+                                </form>
                                 <button className="payment-btn">Buy with Credit Card</button>
                             </div>
                             <div className="payment-right">

@@ -75,14 +75,37 @@
 
 /* Payment Space Section */
 .payment-space {
-  /* border: 1px solid red; */
-  height: 400px;
   display: flex;
   padding-bottom: 40px;
 }
 
+/* left */
 .payment-left {
   border-right: 1px solid #4d4d4d;
+}
+
+.payment-form {
+  /* border: 1px solid red; */
+  /* height: 250px; */
+  margin-bottom: 40px;
+  width: 400px;
+}
+
+.payment-input {
+  background: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #4d4d4d;
+  margin-bottom: 10px !important;
+  color: white;
+}
+
+.payment-row {
+  display: flex;
+}
+
+.payment-row input:nth-child(1) {
+  margin-right: 20px;
 }
 
 .payment-left, .payment-right {
@@ -101,6 +124,7 @@
   width: 220px;
 }
 
+/* right */
 .payment-balance {
   width: 100%;
   padding: 0 4%;
