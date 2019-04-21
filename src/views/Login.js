@@ -1,6 +1,6 @@
 import React from 'react';
 import '../constants/login.css';
-import image from '../constants/images/logo.png';
+import image from '../constants/images/logo-black.png';
 
 import Header from '../common/Header';
 import Footer from '../common/Footer';
