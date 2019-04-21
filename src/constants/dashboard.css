@@ -1,0 +1,48 @@
+.dashboard {
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  padding-top: 10px;
+  background-color: #151515;
+  font-family: Montserrat;
+}
+
+.dashboard-h2 {
+  text-align: left;
+  color: white;
+  width: 100%;
+  padding: 10px 4%;
+  font-size: 32px;
+}
+
+.dashboard-feature {
+  width: 100%;
+  padding: 10px 4%;
+  display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard-feature img {
+  height: 30%;
+  width: 30%;
+  object-fit: cover;
+  background-color: #1b1b1b;
+}
+
+.dashboard-feature-time {
+  display: flex;
+    justify-content: space-between;
+  width: 100%;
+  padding: 10px 4%;
+}
+
+.dashboard-feature-time p {
+  color: white;
+}
+
+.dashboard-feature-time button {
+  color: white;
+  text-transform: uppercase;
+}
