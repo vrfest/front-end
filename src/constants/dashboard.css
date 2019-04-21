@@ -25,14 +25,14 @@
 }
 
 .dashboard-feature img {
-  height: 30%;
+  /* height: 30%; */
   width:  30%;
   object-fit: cover;
   background-color: #1b1b1b;
 }
 
 .dashboard-feature img:nth-child(2) {
-  height: 35%;
+  /* height: 35%; */
   width:  35%;
 }
 
