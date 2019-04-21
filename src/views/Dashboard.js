@@ -144,40 +144,27 @@ export default class Dashboard extends React.Component {
                                     <h3>Tracks</h3>
 
                                     <div className="modal-li">
-                                        <p> • I'm a survivor</p>
+                                        <p> • Fire and Rayn</p>
                                         <p>0:00</p>
                                     </div>
                                     <div className="modal-li">
-                                        <p> • I'm a survivor</p>
+                                        <p> • Gomd</p>
                                         <p>0:00</p>
                                     </div>
                                     <div className="modal-li">
-                                        <p> • I'm a survivor</p>
+                                        <p> • Mind Games</p>
                                         <p>0:00</p>
                                     </div>
                                     <div className="modal-li">
-                                        <p> • I'm a survivor</p>
+                                        <p> • Faded </p>
                                         <p>0:00</p>
                                     </div>
-                                    <div className="modal-li">
-                                        <p> • I'm a survivor</p>
-                                        <p>0:00</p>
-                                    </div>
-                                    <div className="modal-li">
-                                        <p> • I'm a survivor</p>
-                                        <p>0:00</p>
-                                    </div>
-                                    <div className="modal-li">
-                                        <p> • I'm a survivor</p>
-                                        <p>0:00</p>
-                                    </div>
-                                    <div className="modal-li">
-                                        <p> • I'm a survivor</p>
-                                        <p>0:00</p>
-                                    </div>
+
                                 </div>
 
-                                <button className="modal-btn">Buy Now</button>
+                                <button className="modal-btn">
+                                    <a href="/payment">Buy Now</a>
+                                </button>
 
                             </Grid>
                         }

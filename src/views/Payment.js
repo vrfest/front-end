@@ -29,7 +29,7 @@ export default class Payment extends React.Component {
                         </div>
 
                         <div className="payment-cost">
-                            <p>20$ or 100VRT</p>
+                            <p>20$ &nbsp; or &nbsp; 100VRT</p>
                         </div>
 
                         <div className="payment-space">
