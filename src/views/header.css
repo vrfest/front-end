@@ -1,0 +1,63 @@
+.navbar {
+  height: 72px;
+  position: fixed;
+  width: 100%;
+  background-color: #151515;
+  padding: 0;
+  position: relative;
+}
+
+.navbar-main {
+  height: 100%;
+  /* width: 100%; */
+  margin: 0 4%;
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-left p {
+  color: white;
+  margin: 0;
+}
+
+.navbar-menu {
+  height: 32px;
+  width: 32px;
+  margin: 0;
+}
+
+.navbar-right p {
+  color: white;
+  margin: 0;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: 200;
+  letter-spacing: 0.2px;
+  position: absolute;
+    right: calc(50% - 50px);
+  color: white;
+  font-family: Montserrat;
+  height: 24px;
+  margin: 0;
+}
+
+.navbar-btn {
+  margin: 0;
+  background-color: white;
+  background-image: none;
+  color: black;
+  height: 48px;
+}
+
+.navbar-btn a {
+  color: black;
+}
+
+@media screen and (max-width: 650px) {
+  .brand {
+    display: none;
+  }
+}

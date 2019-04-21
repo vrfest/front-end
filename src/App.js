@@ -5,7 +5,7 @@ import Footer from './common/Footer';
 import { FirebaseDatabaseProvider } from "@react-firebase/database";
 import * as firebase from "firebase/app";
 import "firebase/database";
-import { config }  from "../src/constants/config";
+import { config } from "../src/constants/config";
 
 class App extends Component {
   render() {
@@ -13,7 +13,7 @@ class App extends Component {
       <FirebaseDatabaseProvider firebase={firebase} {...config}>
         <div>
           {/* <Header/> */}
-            <RouteHandler/>
+          <RouteHandler />
           {/* <Footer/> */}
         </div>
       </FirebaseDatabaseProvider>
