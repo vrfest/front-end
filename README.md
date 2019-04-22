@@ -1,68 +1,25 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# VRFest
+Front-end for VRFest. VRFest enables anyone around the world to attend festivals in virtual reality at a substantially lower cost 
 
-## Available Scripts
+## Inspiration
+While concerts are a major source of revenue for artists, they are expensive, time-consuming, and stressful. Moreover, a substantial amount of fans are often unable to attend the aforementioned concerts due to budget and geographical constraints. 
 
-In the project directory, you can run:
+## What it does
+VRFest enables anyone around the world to attend festivals in virtual reality at a substantially lower cost. Furthermore, this marketplace is decentralized and based on the Qtum blockchain, in a bid to empower artists with small audiences and to allow ease of exchange of virtual merchandise (apparel for your character, emoticons, dance moves). This platform is comprised of three components: a front-end marketplace that permits the purchase of VR festival tickets and merchandise, the Unity VR environment, and a Solidity-based back-end on the Qtum blockchain to manage transactions and property ownership.
 
-### `npm start`
+## How we built it
+- The virtual reality environment was created with the Unity3D game engine and programmed in C#. All models and sounds were open-source and free on the Unity asset store.
+- The front-end mainly uses React and a few dependencies. The website is built using JavaScript, CSS, and HTML. 
+- The back-end uses Node.js and Qtum blockchain api for transaction.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Challenges we ran into
+Our team has previously never worked with the Qtum blockchain nor had the majority of us worked with Unity3D and virtual reality, hence the steep learning curve during the initial half of the hackathon.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+## Accomplishments that we're proud of
+VRFest has a beautiful, fluent website design that is sure to entice any potential festival-goers. Moreover, we’re proud of our virtual reality environment set on Mars and populated with dancing ragdolls. Enjoy Sickick’s concert on Mars from the comfort of your living room!
 
-### `npm test`
+## What we learned
+We learned how to interact with the Qtum blockchain as well as virtual reality development.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## What's next for VRFest
+Implement the business models, such as a tiered payment system for the artist. In the future, VRFest will have more revenue streams from advertisements, cross-promoting events, and sponsorships.
