@@ -1,5 +1,5 @@
 import React from 'react';
-import '../constants/payment.css';
+import '../constants/css/payment.css';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 import {Link} from 'react-router-dom';

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../constants/header.css';
+import '../constants/css/header.css';
 import { Link } from "react-router-dom";
 import icon from '../constants/images/icon-hamburger.png';
 import brand from '../constants/images/vrfest.png';

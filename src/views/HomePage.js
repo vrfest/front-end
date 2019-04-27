@@ -6,7 +6,7 @@ import video from '../constants/videos/splash.mp4';
 
 import Header from '../common/Header';
 import Footer from '../common/Footer';
-import '../constants/home.css';
+import '../constants/css/home.css';
 import { getToken } from '../utils/LocalCache';
 
 export default class HomePage extends React.Component {

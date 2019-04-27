@@ -4,7 +4,7 @@ import React from 'react';
 import { artists, newArtists } from '../constants/initialState.json';
 import { Grid, Paper, Modal } from '@material-ui/core';
 
-import '../constants/dashboard.css';
+import '../constants/css/dashboard.css';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
 import card from '../constants/images/card.png';
@@ -112,7 +112,7 @@ export default class Dashboard extends React.Component {
                     </div>
 
                     <h2 className="dashboard-h2">Upcoming events</h2>
-                    {this.renderArtist()}
+                    {/* {this.renderArtist()} */}
 
                     <h2 className="dashboard-h2">New Artists</h2>
                     {this.renderNewArtist()}

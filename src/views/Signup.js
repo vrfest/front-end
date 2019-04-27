@@ -1,5 +1,5 @@
 import React from 'react';
-import '../constants/signup.css';
+import '../constants/css/signup.css';
 import image from '../constants/images/logo-black.png';
 
 import Header from '../common/Header';

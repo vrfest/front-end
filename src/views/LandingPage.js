@@ -1,5 +1,5 @@
 import React from 'react';
-import '../constants/landing.css';
+import '../constants/css/landing.css';
 import { FirebaseDatabaseMutation, FirebaseDatabaseNode } from '@react-firebase/database';
 // import image from '../constants/images/logo.png';
 import logo from '../constants/images/landing-logo.png';
