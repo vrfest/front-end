@@ -39,7 +39,7 @@ export default class Dashboard extends React.Component {
             );
         });
     }
-
+/*
     renderNewArtist = () => {
         return newArtists.map((newArtists) => {
             return (
@@ -60,7 +60,7 @@ export default class Dashboard extends React.Component {
             );
         });
     }
-
+*/
     handleOpen = (artist) => {
         this.setState({ open: true, current_artist: artist });
     };
@@ -83,7 +83,7 @@ export default class Dashboard extends React.Component {
                     <h2 className="dashboard-h2">My Wallet</h2>
                     <div className="dashboard-wallet">
                         <div className="dashboard-card">
-                            <img className="dashboard-card-img" src={card} alt="Wallet" />
+                            
                         </div>
 
                         <div className="dashboard-wallet-text">
