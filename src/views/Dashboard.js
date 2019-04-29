@@ -114,7 +114,7 @@ export default class Dashboard extends React.Component {
                     </div>
 
                     <h2 className="dashboard-h2">Upcoming events</h2>
-                         {this.renderArtist()}
+                    {this.renderArtist()}
                     {/* {this.renderArtist()} 
                     <h2 className="dashboard-h2">New Artists</h2>
                     {this.renderNewArtist()}*/}
