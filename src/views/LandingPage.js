@@ -49,7 +49,7 @@ export default class LandingPage extends React.Component {
             <div className="landing">
                 <div className="landing-container">
                     {/* <img className="form-logo" src={image} alt="Logo" /> */}
-                    <img className="form-logo" src={logo} alt="Logo" />
+                    
                     <h2 className="landing-h2">Sign up before the time expires to get $10 off your first VR concert ticket.</h2>
                     <Clock time={this.state.count} />
                     <form className="landing-form">
