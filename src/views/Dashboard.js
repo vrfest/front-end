@@ -75,7 +75,7 @@ export default class Dashboard extends React.Component {
     handleSubmit = () => {
         this.setState({ open: false });
     };
-*/
+
     render() {
         const { current_artist } = this.state;
         return (
@@ -114,11 +114,9 @@ export default class Dashboard extends React.Component {
                     </div>
 
                     <h2 className="dashboard-h2">Upcoming events</h2>
-                    {/* {this.renderArtist()} */}
-
+                    {/* {this.renderArtist()} 
                     <h2 className="dashboard-h2">New Artists</h2>
-                    {this.renderNewArtist()}
-
+                    {this.renderNewArtist()}*/}
                 </div>
                 <Modal
                     aria-labelledby="simple-modal-title"
