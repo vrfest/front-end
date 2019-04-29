@@ -7,7 +7,7 @@ import { Grid, Paper, Modal } from '@material-ui/core';
 import '../constants/css/dashboard.css';
 import Header from '../common/Header';
 import Footer from '../common/Footer';
-import card from '../constants/images/card.png';
+import card from '../constants/images/cooper_card.png';
 import { getToken, getTicket } from '../utils/LocalCache';
 
 export default class Dashboard extends React.Component {
@@ -85,7 +85,7 @@ export default class Dashboard extends React.Component {
                     <h2 className="dashboard-h2">My Wallet</h2>
                     <div className="dashboard-wallet">
                         <div className="dashboard-card">
-                            {/*<img className="dashboard-card-img" src={card} alt="Wallet" />*/}
+                            {<img className="dashboard-card-img" src={card} alt="Wallet" />}
                         </div>
 
                         <div className="dashboard-wallet-text">
