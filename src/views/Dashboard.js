@@ -62,7 +62,7 @@ export default class Dashboard extends React.Component {
             );
         });
     }
-*/
+
     handleOpen = (artist) => {
         this.setState({ open: true, current_artist: artist });
     };
@@ -75,7 +75,7 @@ export default class Dashboard extends React.Component {
     handleSubmit = () => {
         this.setState({ open: false });
     };
-
+*/
     render() {
         const { current_artist } = this.state;
         return (
