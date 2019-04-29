@@ -16,9 +16,11 @@ export default class Dashboard extends React.Component {
         this.state = {
             open: false,
             current_artist: artists[0],
+            //cuurent artist is whats pointing to artur aslanyan by simeply changing 
+            //the number it will point to a different
         };
     }
-/*
+
     renderArtist = () => {
         return artists.map((artist) => {
             return (
@@ -39,7 +41,7 @@ export default class Dashboard extends React.Component {
             );
         });
     }
-
+/*
     renderNewArtist = () => {
         return newArtists.map((newArtists) => {
             return (
@@ -83,7 +85,7 @@ export default class Dashboard extends React.Component {
                     <h2 className="dashboard-h2">My Wallet</h2>
                     <div className="dashboard-wallet">
                         <div className="dashboard-card">
-                            <img className="dashboard-card-img" src={card} alt="Wallet" />
+                            {/*<img className="dashboard-card-img" src={card} alt="Wallet" />*/}
                         </div>
 
                         <div className="dashboard-wallet-text">
@@ -101,7 +103,7 @@ export default class Dashboard extends React.Component {
                     <h2 className="dashboard-h2">My tickets</h2>
                     <div className="dashboard-feature">
                         {/* <img className="dashboard-img" src="https://charts-static.billboard.com/img/2011/02/ariana-grande-ypy.jpg" alt=""/> */}
-                        { /*getTicket() && <img className="dashboard-img" src="https://i.imgur.com/Yq9kJpX.png" alt=""/>*/}
+                        { getTicket() && <img className="dashboard-img" src="https://i.imgur.com/Yq9kJpX.png" alt=""/>}
                         {/* <img className="dashboard-img" src="https://pbs.twimg.com/profile_images/1054790574086201345/hnnkdKJm_400x400.jpg" alt=""/> */}
                     </div>
 
