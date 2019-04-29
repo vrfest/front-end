@@ -62,7 +62,7 @@ export default class Dashboard extends React.Component {
             );
         });
     }
-
+*/
     handleOpen = (artist) => {
         this.setState({ open: true, current_artist: artist });
     };
