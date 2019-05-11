@@ -1,6 +1,8 @@
 # VRFest
 Front-end for VRFest. VRFest enables anyone around the world to attend festivals in virtual reality at a substantially lower cost 
 
+![VRFest Website](https://i.imgur.com/RI1EX2Z.png)
+
 ## Inspiration
 While concerts are a major source of revenue for artists, they are expensive, time-consuming, and stressful. Moreover, a substantial amount of fans are often unable to attend the aforementioned concerts due to budget and geographical constraints. 
 
